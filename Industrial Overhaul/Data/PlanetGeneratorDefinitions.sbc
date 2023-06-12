@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 <Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <!--Planets -->
+  <!-- EarthLike -->
   <Definition xsi:type="PlanetGeneratorDefinition">
     <Id>
       <TypeId>PlanetGeneratorDefinition</TypeId>
@@ -61,23 +62,27 @@
     </DistortionTable>
 
     <OreMappings>
-      <!-- <Ore Value="245" Type="Iron_01" Start="15" Depth="7" TargetColor="#616c83" ColorInfluence="15"/>
-      <Ore Value="235" Type="Nickel_01" Start="10" Depth="4" TargetColor="#616c83" ColorInfluence="15"/>
-      <Ore Value="225" Type="Silicon_01" Start="19" Depth="4" TargetColor="#616c83" ColorInfluence="15"/>
-      <Ore Value="215" Type="Silver_01" Start="21" Depth="3" TargetColor="#616c83" ColorInfluence="15"/>
-      <Ore Value="205" Type="Magnesium_01" Start="23" Depth="4" TargetColor="#616c83" ColorInfluence="15"/>
-      <Ore Value="195" Type="Cobalt_01" Start="15" Depth="4" TargetColor="#616c83" ColorInfluence="15"/>
-      <Ore Value="185" Type="Gold_01" Start="75" Depth="3" TargetColor="#616c83" ColorInfluence="15"/>
+      <!-- 20% -->
+      <Ore Value="95" Type="Coal" Start="40" Depth="10" TargetColor="#616c83" ColorInfluence="15"/>
+    
+      <!-- 5% -->
+      <Ore Value="245" Type="Iron_01" Start="15" Depth="7" TargetColor="#616c83" ColorInfluence="15"/>
       <Ore Value="175" Type="Iron_01" Start="15" Depth="7" TargetColor="#616c83" ColorInfluence="15"/>
+      <Ore Value="235" Type="Nickel_01" Start="10" Depth="4" TargetColor="#616c83" ColorInfluence="15"/>
+      <Ore Value="185" Type="Nickel_01" Start="75" Depth="3" TargetColor="#616c83" ColorInfluence="15"/>
+      <Ore Value="225" Type="Silicon_01" Start="19" Depth="4" TargetColor="#616c83" ColorInfluence="15"/>
+      <Ore Value="135" Type="Silicon_01" Start="92" Depth="2" TargetColor="#616c83" ColorInfluence="15"/>
+      <Ore Value="145" Type="Copper" Start="12" Depth="5" TargetColor="#616c83" ColorInfluence="15"/>
       <Ore Value="165" Type="Copper" Start="12" Depth="5" TargetColor="#616c83" ColorInfluence="15"/>
       <Ore Value="155" Type="OilSand" Start="82" Depth="8" TargetColor="#616c83" ColorInfluence="15"/>
-      <Ore Value="145" Type="Copper" Start="12" Depth="5" TargetColor="#616c83" ColorInfluence="15"/>
-      <Ore Value="135" Type="Lithium" Start="92" Depth="2" TargetColor="#616c83" ColorInfluence="15"/>
+      <Ore Value="105" Type="OilSand" Start="82" Depth="8" TargetColor="#616c83" ColorInfluence="15"/>
+      
+      <Ore Value="195" Type="Cobalt_01" Start="15" Depth="4" TargetColor="#616c83" ColorInfluence="15"/>
+      <Ore Value="215" Type="Silver_01" Start="21" Depth="3" TargetColor="#616c83" ColorInfluence="15"/>
       <Ore Value="125" Type="Bauxite" Start="32" Depth="5" TargetColor="#616c83" ColorInfluence="15"/>
       <Ore Value="115" Type="Titanium" Start="103" Depth="5" TargetColor="#616c83" ColorInfluence="15"/>
-      <Ore Value="105" Type="OilSand" Start="82" Depth="8" TargetColor="#616c83" ColorInfluence="15"/>
-      <Ore Value="95" Type="Coal" Start="40" Depth="10" TargetColor="#616c83" ColorInfluence="15"/>
-      <Ore Value="85" Type="Sulfur" Start="60" Depth="5" TargetColor="#616c83" ColorInfluence="15"/> -->
+      <Ore Value="85" Type="Sulfur" Start="60" Depth="5" TargetColor="#616c83" ColorInfluence="15"/>
+      <Ore Value="205" Type="Magnesium_01" Start="23" Depth="4" TargetColor="#616c83" ColorInfluence="15"/>
     </OreMappings>
 
     <SoundRules>
@@ -668,7 +673,7 @@
           <Material>Snow</Material>
         </Materials>
         <Items>
-          <Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" GroupId="SnowCoverageIronCore" ModifierId="EarthSnowArea" Density="0.002" />
+          <!-- <Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" GroupId="SnowCoverageIronCore" ModifierId="EarthSnowArea" Density="0.002" /> -->
         </Items>
         <Rule>
           <Height Min="0" Max="0.7"/>
@@ -686,7 +691,7 @@
         </Materials>
         <Items>
           <Item TypeId="MyObjectBuilder_DestroyableItems" SubtypeId="SnowFoliage" Density="0.1"/>
-          <Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" GroupId="SnowCoverageIronCore" ModifierId="EarthSnowArea" Density="0.002" />
+          <!-- <Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" GroupId="SnowCoverageIronCore" ModifierId="EarthSnowArea" Density="0.002" /> -->
         </Items>
         <Rule>
           <Height Min="0" Max="0.7"/>
@@ -706,7 +711,7 @@
         </Materials>
         <Items>
           <Item TypeId="MyObjectBuilder_DestroyableItems" SubtypeId="GrassFoliage" Density="0.2"/>
-          <Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" GroupId="StoneCoverageIronCore" ModifierId="EarthForestArea" Density="0.002" />
+          <!-- <Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" GroupId="StoneCoverageIronCore" ModifierId="EarthForestArea" Density="0.002" /> -->
         </Items>
         <Rule>
           <Height Min="0" Max="0.7"/>
@@ -723,7 +728,7 @@
           <Material>Woods_grass</Material>
         </Materials>
         <Items>
-          <Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" GroupId="StoneCoverageIronCore" ModifierId="EarthForestArea" Density="0.002" />
+          <!-- <Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" GroupId="StoneCoverageIronCore" ModifierId="EarthForestArea" Density="0.002" /> -->
         </Items>
         <Rule>
           <Height Min="0" Max="0.7"/>
@@ -741,7 +746,7 @@
         </Materials>
         <Items>
           <Item TypeId="MyObjectBuilder_DestroyableItems" SubtypeId="WoodGrassFoliage" Density="0.15"/>
-          <Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" GroupId="StoneCoverageIronCore" ModifierId="EarthForestArea" Density="0.002" />
+          <!-- <Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" GroupId="StoneCoverageIronCore" ModifierId="EarthForestArea" Density="0.002" /> -->
         </Items>
         <Rule>
           <Height Min="0" Max="0.7"/>
@@ -758,7 +763,7 @@
           <Material>Rocks_grass</Material>
         </Materials>
         <Items>
-          <Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" GroupId="StoneCoverageIronCore" ModifierId="EarthForestArea" Density="0.002" />
+          <!-- <Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" GroupId="StoneCoverageIronCore" ModifierId="EarthForestArea" Density="0.002" /> -->
         </Items>
         <Rule>
           <Height Min="0" Max="0.7"/>
@@ -776,7 +781,7 @@
         </Materials>
         <Items>
           <Item TypeId="MyObjectBuilder_DestroyableItems" SubtypeId="RockGrassFoliage" Density="0.1"/>
-          <Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" GroupId="StoneCoverageIronCore" ModifierId="EarthForestArea" Density="0.002" />
+          <!-- <Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" GroupId="StoneCoverageIronCore" ModifierId="EarthForestArea" Density="0.002" /> -->
         </Items>
         <Rule>
           <Height Min="0" Max="0.7"/>
@@ -793,7 +798,7 @@
           <Material>Grass</Material>
         </Materials>
         <Items>
-          <Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" GroupId="StoneCoverageIronCore" ModifierId="EarthForestArea" Density="0.002" />
+          <!-- <Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" GroupId="StoneCoverageIronCore" ModifierId="EarthForestArea" Density="0.002" /> -->
         </Items>
         <Rule>
           <Height Min="0" Max="0.7"/>
@@ -811,7 +816,7 @@
         </Materials>
         <Items>
           <Item TypeId="MyObjectBuilder_DestroyableItems" SubtypeId="GrassFoliage" Density="0.2"/>
-          <Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" GroupId="StoneCoverageIronCore" ModifierId="EarthForestArea" Density="0.002" />
+          <!-- <Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" GroupId="StoneCoverageIronCore" ModifierId="EarthForestArea" Density="0.002" /> -->
         </Items>
         <Rule>
           <Height Min="0" Max="0.7"/>
@@ -828,7 +833,7 @@
           <Material>Grass_old</Material>
         </Materials>
         <Items>
-          <Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" GroupId="StoneCoverageIronCore" ModifierId="EarthDesertArea" Density="0.002" />
+          <!-- <Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" GroupId="StoneCoverageIronCore" ModifierId="EarthDesertArea" Density="0.002" /> -->
         </Items>
         <Rule>
           <Height Min="0" Max="0.7"/>
@@ -846,7 +851,7 @@
         </Materials>
         <Items>
           <Item TypeId="MyObjectBuilder_DestroyableItems" SubtypeId="GrassOldFoliage" Density="0.3"/>
-          <Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" GroupId="StoneCoverageIronCore" ModifierId="EarthDesertArea" Density="0.002" />
+          <!-- <Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" GroupId="StoneCoverageIronCore" ModifierId="EarthDesertArea" Density="0.002" /> -->
         </Items>
         <Rule>
           <Height Min="0" Max="0.7"/>
@@ -863,7 +868,7 @@
           <Material>Sand_02</Material>
         </Materials>
         <Items>
-          <Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" GroupId="StoneCoverageIronCore" ModifierId="EarthDesertArea" Density="0.002" />
+          <!-- <Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" GroupId="StoneCoverageIronCore" ModifierId="EarthDesertArea" Density="0.002" /> -->
         </Items>
         <Rule>
           <Height Min="0" Max="0.7"/>
@@ -881,7 +886,7 @@
         </Materials>
         <Items>
           <Item TypeId="MyObjectBuilder_DestroyableItems" SubtypeId="SandFoliage" Density="0.1"/>
-          <Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" GroupId="StoneCoverageIronCore" ModifierId="EarthDesertArea" Density="0.003" />
+          <!-- <Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" GroupId="StoneCoverageIronCore" ModifierId="EarthDesertArea" Density="0.003" /> -->
         </Items>
         <Rule>
           <Height Min="0" Max="0.7"/>
@@ -906,7 +911,7 @@
         <Items>
           <Item TypeId="MyObjectBuilder_Trees" SubtypeId="SnowForestEdge" Density="0.3"/>
           <Item TypeId="MyObjectBuilder_DestroyableItems" SubtypeId="SnowBushForestEdge" Density="0.4"/>
-          <Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" GroupId="SnowCoverageIronCore" ModifierId="EarthSnowArea" Density="0.002" />
+          <!-- <Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" GroupId="SnowCoverageIronCore" ModifierId="EarthSnowArea" Density="0.002" /> -->
         </Items>
         <Rule>
           <Height Min="0" Max="0.7"/>
@@ -1734,6 +1739,7 @@
     </WeatherGenerators>
   </Definition>
 
+  <!-- Alien -->
   <Definition xsi:type="PlanetGeneratorDefinition">
     <Id>
       <TypeId>PlanetGeneratorDefinition</TypeId>
@@ -1793,23 +1799,27 @@
     </DistortionTable>
 
     <OreMappings>
-      <!-- <Ore Value="245" Type="Iron_01" Start="5" Depth="7" TargetColor="#616c83" ColorInfluence="15"/>
+      <!-- 20% -->
+      <Ore Value="95" Type="Coal" Start="40" Depth="10" TargetColor="#616c83" ColorInfluence="15"/>
+    
+      <!-- 5% -->
+      <Ore Value="245" Type="Iron_01" Start="15" Depth="7" TargetColor="#616c83" ColorInfluence="15"/>
+      <Ore Value="175" Type="Iron_01" Start="15" Depth="7" TargetColor="#616c83" ColorInfluence="15"/>
       <Ore Value="235" Type="Nickel_01" Start="10" Depth="4" TargetColor="#616c83" ColorInfluence="15"/>
-      <Ore Value="225" Type="Silicon_01" Start="9" Depth="4" TargetColor="#616c83" ColorInfluence="15"/>
-      <Ore Value="215" Type="Silver_01" Start="21" Depth="3" TargetColor="#616c83" ColorInfluence="15"/>
-      <Ore Value="205" Type="Magnesium_01" Start="23" Depth="4" TargetColor="#616c83" ColorInfluence="15"/>
-      <Ore Value="195" Type="Cobalt_01" Start="15" Depth="4" TargetColor="#616c83" ColorInfluence="15"/>
-      <Ore Value="185" Type="Gold_01" Start="75" Depth="3" TargetColor="#616c83" ColorInfluence="15"/>
-      <Ore Value="175" Type="Iron_01" Start="5" Depth="7" TargetColor="#616c83" ColorInfluence="15"/>
+      <Ore Value="185" Type="Nickel_01" Start="75" Depth="3" TargetColor="#616c83" ColorInfluence="15"/>
+      <Ore Value="225" Type="Silicon_01" Start="19" Depth="4" TargetColor="#616c83" ColorInfluence="15"/>
+      <Ore Value="135" Type="Silicon_01" Start="92" Depth="2" TargetColor="#616c83" ColorInfluence="15"/>
+      <Ore Value="145" Type="Copper" Start="12" Depth="5" TargetColor="#616c83" ColorInfluence="15"/>
       <Ore Value="165" Type="Copper" Start="12" Depth="5" TargetColor="#616c83" ColorInfluence="15"/>
       <Ore Value="155" Type="OilSand" Start="82" Depth="8" TargetColor="#616c83" ColorInfluence="15"/>
-      <Ore Value="145" Type="Copper" Start="12" Depth="5" TargetColor="#616c83" ColorInfluence="15"/>
-      <Ore Value="135" Type="Lithium" Start="92" Depth="2" TargetColor="#616c83" ColorInfluence="15"/>
+      <Ore Value="105" Type="OilSand" Start="82" Depth="8" TargetColor="#616c83" ColorInfluence="15"/>
+      
+      <Ore Value="195" Type="Cobalt_01" Start="15" Depth="4" TargetColor="#616c83" ColorInfluence="15"/>
+      <Ore Value="215" Type="Silver_01" Start="21" Depth="3" TargetColor="#616c83" ColorInfluence="15"/>
       <Ore Value="125" Type="Bauxite" Start="32" Depth="5" TargetColor="#616c83" ColorInfluence="15"/>
       <Ore Value="115" Type="Titanium" Start="103" Depth="5" TargetColor="#616c83" ColorInfluence="15"/>
-      <Ore Value="105" Type="OilSand" Start="82" Depth="8" TargetColor="#616c83" ColorInfluence="15"/>
-      <Ore Value="95" Type="Coal" Start="40" Depth="10" TargetColor="#616c83" ColorInfluence="15"/>
-      <Ore Value="85" Type="Sulfur" Start="60" Depth="5" TargetColor="#616c83" ColorInfluence="15"/> -->
+      <Ore Value="85" Type="Sulfur" Start="60" Depth="5" TargetColor="#616c83" ColorInfluence="15"/>
+      <Ore Value="205" Type="Magnesium_01" Start="23" Depth="4" TargetColor="#616c83" ColorInfluence="15"/>
     </OreMappings>
 
     <!-- Rules that define where Ambient sounds should be played defined by angle from equator -->
@@ -2390,8 +2400,8 @@
           <Material>AlienSnow</Material>
         </Materials>
         <Items>
-          <Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" SubtypeId="alienrockyterrain_snowtop_largestone" Density="0.001" />
-          <Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" GroupId="SnowCoverageIronCore" ModifierId="AlienIcelandArea" Density="0.002" />
+          <!-- <Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" SubtypeId="alienrockyterrain_snowtop_largestone" Density="0.001" /> -->
+          <!-- <Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" GroupId="SnowCoverageIronCore" ModifierId="AlienIcelandArea" Density="0.002" /> -->
         </Items>
         <Rule>
           <Height Min="0" Max="0.7"/>
@@ -2409,7 +2419,7 @@
         </Materials>
         <Items>
           <Item TypeId="MyObjectBuilder_DestroyableItems" SubtypeId="AlienSnowFoliage" Density="0.2"/>
-          <Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" GroupId="SnowCoverageIronCore" ModifierId="AlienIcelandArea" Density="0.002" />
+          <!-- <Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" GroupId="SnowCoverageIronCore" ModifierId="AlienIcelandArea" Density="0.002" /> -->
         </Items>
         <Rule>
           <Height Min="0" Max="0.7"/>
@@ -2426,7 +2436,7 @@
           <Material>AlienOrangeGrass</Material>
         </Materials>
         <Items>
-          <Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" GroupId="StoneCoverageIronCore" ModifierId="AlienForestArea" Density="0.002" />
+          <!-- <Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" GroupId="StoneCoverageIronCore" ModifierId="AlienForestArea" Density="0.002" /> -->
         </Items>
         <Rule>
           <Height Min="0" Max="0.7"/>
@@ -2444,7 +2454,7 @@
         </Materials>
         <Items>
           <Item TypeId="MyObjectBuilder_DestroyableItems" SubtypeId="AlienOrangeGrassFoliage" Density="0.2"/>
-          <Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" GroupId="StoneCoverageIronCore" ModifierId="AlienForestArea" Density="0.002" />
+          <!-- <Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" GroupId="StoneCoverageIronCore" ModifierId="AlienForestArea" Density="0.002" /> -->
         </Items>
         <Rule>
           <Height Min="0" Max="0.7"/>
@@ -2461,8 +2471,8 @@
           <Material>AlienYellowGrass</Material>
         </Materials>
         <Items>
-          <Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" SubtypeId="alienrockymountain_largestone" Density="0.001" />
-          <Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" GroupId="StoneCoverageIronCore" ModifierId="AlienForestArea" Density="0.002" />
+          <!-- <Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" SubtypeId="alienrockymountain_largestone" Density="0.001" /> -->
+          <!-- <Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" GroupId="StoneCoverageIronCore" ModifierId="AlienForestArea" Density="0.002" /> -->
         </Items>
         <Rule>
           <Height Min="0" Max="0.7"/>
@@ -2480,7 +2490,7 @@
         </Materials>
         <Items>
           <Item TypeId="MyObjectBuilder_DestroyableItems" SubtypeId="AlienYellowGrassFoliage" Density="0.2"/>
-          <Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" GroupId="StoneCoverageIronCore" ModifierId="AlienForestArea" Density="0.002" />
+          <!-- <Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" GroupId="StoneCoverageIronCore" ModifierId="AlienForestArea" Density="0.002" /> -->
         </Items>
         <Rule>
           <Height Min="0" Max="0.7"/>
@@ -2497,7 +2507,7 @@
           <Material>AlienGreenGrass</Material>
         </Materials>
         <Items>
-          <Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" GroupId="StoneCoverageIronCore" ModifierId="AlienForestArea" Density="0.002" />
+          <!-- <Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" GroupId="StoneCoverageIronCore" ModifierId="AlienForestArea" Density="0.002" /> -->
         </Items>
         <Rule>
           <Height Min="0" Max="0.7"/>
@@ -2515,7 +2525,7 @@
         </Materials>
         <Items>
           <Item TypeId="MyObjectBuilder_DestroyableItems" SubtypeId="AlienGreenGrassFoliage" Density="0.2"/>
-          <Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" GroupId="StoneCoverageIronCore" ModifierId="AlienForestArea" Density="0.002" />
+          <!-- <Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" GroupId="StoneCoverageIronCore" ModifierId="AlienForestArea" Density="0.002" /> -->
         </Items>
         <Rule>
           <Height Min="0" Max="0.7"/>
@@ -2533,7 +2543,7 @@
           <Material>Soil</Material>
         </Materials>
         <Items>
-          <Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" GroupId="StoneCoverageIronCore" ModifierId="AlienForestArea" Density="0.002" />
+          <!-- <Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" GroupId="StoneCoverageIronCore" ModifierId="AlienForestArea" Density="0.002" /> -->
         </Items>
         <Rule>
           <Height Min="0" Max="0.7"/>
@@ -2552,7 +2562,7 @@
         </Materials>
         <Items>
           <Item TypeId="MyObjectBuilder_DestroyableItems" SubtypeId="AlienRockGrassFoliage" Density="0.2"/>
-          <Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" GroupId="StoneCoverageIronCore" ModifierId="AlienForestArea" Density="0.002" />
+          <!-- <Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" GroupId="StoneCoverageIronCore" ModifierId="AlienForestArea" Density="0.002" /> -->
         </Items>
         <Rule>
           <Height Min="0" Max="0.7"/>
@@ -2569,7 +2579,7 @@
           <Material>AlienSand</Material>
         </Materials>
         <Items>
-          <Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" GroupId="StoneCoverageIronCore" ModifierId="AlienDesertArea" Density="0.002" />
+          <!-- <Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" GroupId="StoneCoverageIronCore" ModifierId="AlienDesertArea" Density="0.002" /> -->
         </Items>
         <Rule>
           <Height Min="0" Max="0.7"/>
@@ -2587,7 +2597,7 @@
         </Materials>
         <Items>
           <Item TypeId="MyObjectBuilder_DestroyableItems" SubtypeId="AlienSandFoliage" Density="0.2"/>
-          <Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" GroupId="StoneCoverageIronCore" ModifierId="AlienDesertArea" Density="0.002" />
+          <!-- <Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" GroupId="StoneCoverageIronCore" ModifierId="AlienDesertArea" Density="0.002" /> -->
         </Items>
         <Rule>
           <Height Min="0" Max="0.7"/>
@@ -3415,6 +3425,7 @@
     </WeatherGenerators>
   </Definition>
 
+  <!-- Mars -->
   <Definition xsi:type="PlanetGeneratorDefinition">
     <Id>
       <TypeId>PlanetGeneratorDefinition</TypeId>
@@ -3461,23 +3472,27 @@
     </SurfaceDetail>
 
     <OreMappings>
-      <!-- <Ore Value="245" Type="Iron_01" Start="5" Depth="7" TargetColor="#616c83" ColorInfluence="15"/>
-      <Ore Value="235" Type="Nickel_01" Start="10" Depth="4" TargetColor="#616c83" ColorInfluence="15"/>
-      <Ore Value="225" Type="Silicon_01" Start="9" Depth="4" TargetColor="#616c83" ColorInfluence="15"/>
-      <Ore Value="215" Type="Silver_01" Start="21" Depth="3" TargetColor="#616c83" ColorInfluence="15"/>
-      <Ore Value="205" Type="Iron_01" Start="5" Depth="7" TargetColor="#616c83" ColorInfluence="15"/>
-      <Ore Value="195" Type="Cobalt_01" Start="15" Depth="4" TargetColor="#616c83" ColorInfluence="15"/>
-      <Ore Value="185" Type="Gold_01" Start="75" Depth="3" TargetColor="#616c83" ColorInfluence="15"/>
-      <Ore Value="175" Type="Iron_01" Start="5" Depth="7" TargetColor="#616c83" ColorInfluence="15"/>
-      <Ore Value="165" Type="Copper" Start="12" Depth="5" TargetColor="#616c83" ColorInfluence="15"/>
-      <Ore Value="155" Type="Titanium" Start="82" Depth="5" TargetColor="#616c83" ColorInfluence="15"/>
-      <Ore Value="145" Type="Copper" Start="12" Depth="5" TargetColor="#616c83" ColorInfluence="15"/>
-      <Ore Value="135" Type="Lithium" Start="92" Depth="2" TargetColor="#616c83" ColorInfluence="15"/>
-      <Ore Value="125" Type="Bauxite" Start="32" Depth="5" TargetColor="#616c83" ColorInfluence="15"/>
-      <Ore Value="115" Type="Titanium" Start="103" Depth="8" TargetColor="#616c83" ColorInfluence="15"/>
-      <Ore Value="105" Type="Bauxite" Start="42" Depth="8" TargetColor="#616c83" ColorInfluence="15"/>
+      <!-- 20% -->
       <Ore Value="95" Type="Coal" Start="40" Depth="10" TargetColor="#616c83" ColorInfluence="15"/>
-      <Ore Value="85" Type="Sulfur" Start="60" Depth="5" TargetColor="#616c83" ColorInfluence="15"/> -->
+    
+      <!-- 5% -->
+      <Ore Value="245" Type="Iron_01" Start="15" Depth="7" TargetColor="#616c83" ColorInfluence="15"/>
+      <Ore Value="175" Type="Iron_01" Start="15" Depth="7" TargetColor="#616c83" ColorInfluence="15"/>
+      <Ore Value="235" Type="Nickel_01" Start="10" Depth="4" TargetColor="#616c83" ColorInfluence="15"/>
+      <Ore Value="185" Type="Nickel_01" Start="75" Depth="3" TargetColor="#616c83" ColorInfluence="15"/>
+      <Ore Value="225" Type="Silicon_01" Start="19" Depth="4" TargetColor="#616c83" ColorInfluence="15"/>
+      <Ore Value="135" Type="Silicon_01" Start="92" Depth="2" TargetColor="#616c83" ColorInfluence="15"/>
+      <Ore Value="145" Type="Copper" Start="12" Depth="5" TargetColor="#616c83" ColorInfluence="15"/>
+      <Ore Value="165" Type="Copper" Start="12" Depth="5" TargetColor="#616c83" ColorInfluence="15"/>
+      <Ore Value="125" Type="Bauxite" Start="32" Depth="5" TargetColor="#616c83" ColorInfluence="15"/>
+      <Ore Value="205" Type="Bauxite" Start="23" Depth="4" TargetColor="#616c83" ColorInfluence="15"/>
+      <Ore Value="195" Type="Cobalt_01" Start="15" Depth="4" TargetColor="#616c83" ColorInfluence="15"/>
+      <Ore Value="215" Type="Silver_01" Start="21" Depth="3" TargetColor="#616c83" ColorInfluence="15"/>
+      <Ore Value="115" Type="Titanium" Start="103" Depth="5" TargetColor="#616c83" ColorInfluence="15"/>
+      <Ore Value="85" Type="Sulfur" Start="60" Depth="5" TargetColor="#616c83" ColorInfluence="15"/>
+
+      <!-- <Ore Value="155" Type="OilSand" Start="82" Depth="8" TargetColor="#616c83" ColorInfluence="15"/> -->
+      <!-- <Ore Value="105" Type="OilSand" Start="82" Depth="8" TargetColor="#616c83" ColorInfluence="15"/> -->
     </OreMappings>
 
     <!-- Mars ambient -->
@@ -3579,7 +3594,7 @@
           <Material>MarsSoil</Material>
         </Materials>
         <Items>
-          <Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" GroupId="StoneCoverageIronCore" ModifierId="Mars" Density="0.003" />
+          <!-- <Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" GroupId="StoneCoverageIronCore" ModifierId="Mars" Density="0.003" /> -->
         </Items>
         <Rule>
           <Height Min="0" Max="0.7"/>
@@ -3596,7 +3611,7 @@
           <Material>MarsRocks</Material>
         </Materials>
         <Items>
-          <Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" GroupId="StoneCoverageIronCore" ModifierId="Mars" Density="0.003" />
+          <!-- <Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" GroupId="StoneCoverageIronCore" ModifierId="Mars" Density="0.003" /> -->
         </Items>
         <Rule>
           <Height Min="0" Max="0.7"/>
@@ -3881,6 +3896,7 @@
   </Definition>
 
   <!--Moons -->
+  <!-- Moon -->
   <Definition xsi:type="PlanetGeneratorDefinition">
     <Id>
       <TypeId>PlanetGeneratorDefinition</TypeId>
@@ -4090,7 +4106,7 @@
           <Material>MoonSoil</Material>
         </Materials>
         <Items>
-          <Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" GroupId="StoneCoverageIronCore" ModifierId="Moon" Density="0.003" />
+          <!-- <Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" GroupId="StoneCoverageIronCore" ModifierId="Moon" Density="0.003" /> -->
         </Items>
         <Rule>
           <Height Min="0" Max="0.7"/>
@@ -4107,7 +4123,7 @@
           <Material>MoonRocks</Material>
         </Materials>
         <Items>
-          <Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" GroupId="StoneCoverageIronCore" ModifierId="Moon" Density="0.003" />
+          <!-- <Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" GroupId="StoneCoverageIronCore" ModifierId="Moon" Density="0.003" /> -->
         </Items>
         <Rule>
           <Height Min="0" Max="0.7"/>
@@ -4118,23 +4134,27 @@
     </EnvironmentItems>
 
     <OreMappings>
-      <!-- <Ore Value="245" Type="Iron_01" Start="5" Depth="7" TargetColor="#616c83" ColorInfluence="15"/>
-      <Ore Value="235" Type="Nickel_01" Start="10" Depth="4" TargetColor="#616c83" ColorInfluence="15"/>
-      <Ore Value="225" Type="Silicon_01" Start="9" Depth="4" TargetColor="#616c83" ColorInfluence="15"/>
-      <Ore Value="215" Type="Silver_01" Start="21" Depth="3" TargetColor="#616c83" ColorInfluence="15"/>
+      <!-- 20% -->
+      <Ore Value="95" Type="Coal" Start="40" Depth="10" TargetColor="#616c83" ColorInfluence="15"/>
+
+      <!-- 5% -->
       <Ore Value="205" Type="Iron_01" Start="5" Depth="7" TargetColor="#616c83" ColorInfluence="15"/>
-      <Ore Value="195" Type="Cobalt_01" Start="15" Depth="4" TargetColor="#616c83" ColorInfluence="15"/>
-      <Ore Value="185" Type="Gold_01" Start="75" Depth="3" TargetColor="#616c83" ColorInfluence="15"/>
-      <Ore Value="175" Type="Platinum_01" Start="112" Depth="2" TargetColor="#616c83" ColorInfluence="15"/>
-      <Ore Value="165" Type="Uraninite_01" Start="112" Depth="6" TargetColor="#616c83" ColorInfluence="15"/>
+      <Ore Value="245" Type="Iron_01" Start="5" Depth="7" TargetColor="#616c83" ColorInfluence="15"/>
+      <Ore Value="225" Type="Silicon_01" Start="9" Depth="4" TargetColor="#616c83" ColorInfluence="15"/>
+      <Ore Value="165" Type="Silicon_01" Start="9" Depth="4" TargetColor="#616c83" ColorInfluence="15"/>
+      <Ore Value="235" Type="Nickel_01" Start="10" Depth="4" TargetColor="#616c83" ColorInfluence="15"/>
+      <Ore Value="175" Type="Nickel_01" Start="10" Depth="4" TargetColor="#616c83" ColorInfluence="15"/>
       <Ore Value="155" Type="Copper" Start="12" Depth="5" TargetColor="#616c83" ColorInfluence="15"/>
       <Ore Value="145" Type="Copper" Start="12" Depth="5" TargetColor="#616c83" ColorInfluence="15"/>
-      <Ore Value="135" Type="Lithium" Start="92" Depth="2" TargetColor="#616c83" ColorInfluence="15"/>
       <Ore Value="125" Type="Bauxite" Start="32" Depth="5" TargetColor="#616c83" ColorInfluence="15"/>
+      <Ore Value="185" Type="Bauxite" Start="32" Depth="5" TargetColor="#616c83" ColorInfluence="15"/>
+      <Ore Value="215" Type="Silver_01" Start="21" Depth="3" TargetColor="#616c83" ColorInfluence="15"/>
+      <Ore Value="195" Type="Cobalt_01" Start="15" Depth="4" TargetColor="#616c83" ColorInfluence="15"/>
       <Ore Value="115" Type="Titanium" Start="103" Depth="5" TargetColor="#616c83" ColorInfluence="15"/>
-      <Ore Value="105" Type="Tantalum" Start="146" Depth="1" TargetColor="#616c83" ColorInfluence="15"/>
-      <Ore Value="95" Type="Coal" Start="40" Depth="10" TargetColor="#616c83" ColorInfluence="15"/>
-      <Ore Value="85" Type="Sulfur" Start="60" Depth="5" TargetColor="#616c83" ColorInfluence="15"/> -->
+      <Ore Value="85" Type="Sulfur" Start="60" Depth="5" TargetColor="#616c83" ColorInfluence="15"/>
+      
+      <!-- <Ore Value="135" Type="Lithium" Start="92" Depth="2" TargetColor="#616c83" ColorInfluence="15"/>
+      <Ore Value="105" Type="Tantalum" Start="146" Depth="1" TargetColor="#616c83" ColorInfluence="15"/> -->
     </OreMappings>
 
     <!-- END Earthmoon definitions -->
@@ -4177,6 +4197,7 @@
     <MinimumSurfaceLayerDepth>5</MinimumSurfaceLayerDepth>
   </Definition>
 
+  <!-- Europa -->
   <Definition xsi:type="PlanetGeneratorDefinition">
     <Id>
       <TypeId>PlanetGeneratorDefinition</TypeId>
@@ -4230,23 +4251,24 @@
     </CustomMaterialTable>
 
     <OreMappings>
-      <!-- <Ore Value="245" Type="Iron_01" Start="5" Depth="7" TargetColor="#616c83" ColorInfluence="15"/>
-      <Ore Value="235" Type="Nickel_01" Start="10" Depth="4" TargetColor="#616c83" ColorInfluence="15"/>
-      <Ore Value="225" Type="Silicon_01" Start="9" Depth="4" TargetColor="#616c83" ColorInfluence="15"/>
-      <Ore Value="215" Type="Silver_01" Start="21" Depth="3" TargetColor="#616c83" ColorInfluence="15"/>
+      <!-- 20% -->
+      <Ore Value="95" Type="Coal" Start="40" Depth="10" TargetColor="#616c83" ColorInfluence="15"/>
+
+      <!-- 5% -->
       <Ore Value="205" Type="Iron_01" Start="5" Depth="7" TargetColor="#616c83" ColorInfluence="15"/>
-      <Ore Value="195" Type="Cobalt_01" Start="15" Depth="4" TargetColor="#616c83" ColorInfluence="15"/>
-      <Ore Value="185" Type="Gold_01" Start="75" Depth="3" TargetColor="#616c83" ColorInfluence="15"/>
-      <Ore Value="175" Type="Platinum_01" Start="112" Depth="2" TargetColor="#616c83" ColorInfluence="15"/>
-      <Ore Value="165" Type="Uraninite_01" Start="112" Depth="6" TargetColor="#616c83" ColorInfluence="15"/>
+      <Ore Value="245" Type="Iron_01" Start="5" Depth="7" TargetColor="#616c83" ColorInfluence="15"/>
+      <Ore Value="225" Type="Silicon_01" Start="9" Depth="4" TargetColor="#616c83" ColorInfluence="15"/>
+      <Ore Value="165" Type="Silicon_01" Start="9" Depth="4" TargetColor="#616c83" ColorInfluence="15"/>
+      <Ore Value="235" Type="Nickel_01" Start="10" Depth="4" TargetColor="#616c83" ColorInfluence="15"/>
+      <Ore Value="175" Type="Nickel_01" Start="10" Depth="4" TargetColor="#616c83" ColorInfluence="15"/>
       <Ore Value="155" Type="Copper" Start="12" Depth="5" TargetColor="#616c83" ColorInfluence="15"/>
       <Ore Value="145" Type="Copper" Start="12" Depth="5" TargetColor="#616c83" ColorInfluence="15"/>
-      <Ore Value="135" Type="Lithium" Start="92" Depth="2" TargetColor="#616c83" ColorInfluence="15"/>
       <Ore Value="125" Type="Bauxite" Start="32" Depth="5" TargetColor="#616c83" ColorInfluence="15"/>
+      <Ore Value="185" Type="Bauxite" Start="32" Depth="5" TargetColor="#616c83" ColorInfluence="15"/>
+      <Ore Value="215" Type="Silver_01" Start="21" Depth="3" TargetColor="#616c83" ColorInfluence="15"/>
+      <Ore Value="195" Type="Cobalt_01" Start="15" Depth="4" TargetColor="#616c83" ColorInfluence="15"/>
       <Ore Value="115" Type="Titanium" Start="103" Depth="5" TargetColor="#616c83" ColorInfluence="15"/>
-      <Ore Value="105" Type="Tantalum" Start="146" Depth="1" TargetColor="#616c83" ColorInfluence="15"/>
-      <Ore Value="95" Type="Coal" Start="40" Depth="10" TargetColor="#616c83" ColorInfluence="15"/>
-      <Ore Value="85" Type="Sulfur" Start="60" Depth="5" TargetColor="#616c83" ColorInfluence="15"/> -->
+      <Ore Value="85" Type="Sulfur" Start="60" Depth="5" TargetColor="#616c83" ColorInfluence="15"/>
     </OreMappings>
 
     <SoundRules>
@@ -4365,7 +4387,7 @@
           <Material>Ice</Material>
         </Materials>
         <Items>
-          <Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" GroupId="SnowCoverageIronCore" ModifierId="Europa" Density="0.003" />
+          <!-- <Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" GroupId="SnowCoverageIronCore" ModifierId="Europa" Density="0.003" /> -->
         </Items>
         <Rule>
           <Height Min="0" Max="0.7"/>
@@ -4382,7 +4404,7 @@
           <Material>Ice_02</Material>
         </Materials>
         <Items>
-          <Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" GroupId="SnowCoverageIronCore" ModifierId="Europa" Density="0.003" />
+          <!-- <Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" GroupId="SnowCoverageIronCore" ModifierId="Europa" Density="0.003" /> -->
         </Items>
         <Rule>
           <Height Min="0" Max="0.7"/>
@@ -4454,6 +4476,7 @@
     </WeatherGenerators>
   </Definition>
 
+  <!-- Titan -->
   <Definition xsi:type="PlanetGeneratorDefinition">
     <Id>
       <TypeId>PlanetGeneratorDefinition</TypeId>
@@ -4500,23 +4523,24 @@
     </SurfaceDetail>
 
     <OreMappings>
-      <!-- <Ore Value="245" Type="Iron_01" Start="5" Depth="7" TargetColor="#616c83" ColorInfluence="15"/>
-      <Ore Value="235" Type="Nickel_01" Start="10" Depth="4" TargetColor="#616c83" ColorInfluence="15"/>
-      <Ore Value="225" Type="Silicon_01" Start="9" Depth="4" TargetColor="#616c83" ColorInfluence="15"/>
-      <Ore Value="215" Type="Silver_01" Start="21" Depth="3" TargetColor="#616c83" ColorInfluence="15"/>
+      <!-- 20% -->
+      <Ore Value="95" Type="Coal" Start="40" Depth="10" TargetColor="#616c83" ColorInfluence="15"/>
+
+      <!-- 5% -->
       <Ore Value="205" Type="Iron_01" Start="5" Depth="7" TargetColor="#616c83" ColorInfluence="15"/>
-      <Ore Value="195" Type="Cobalt_01" Start="15" Depth="4" TargetColor="#616c83" ColorInfluence="15"/>
-      <Ore Value="185" Type="Gold_01" Start="75" Depth="3" TargetColor="#616c83" ColorInfluence="15"/>
-      <Ore Value="175" Type="Platinum_01" Start="112" Depth="2" TargetColor="#616c83" ColorInfluence="15"/>
-      <Ore Value="165" Type="Uraninite_01" Start="112" Depth="6" TargetColor="#616c83" ColorInfluence="15"/>
+      <Ore Value="245" Type="Iron_01" Start="5" Depth="7" TargetColor="#616c83" ColorInfluence="15"/>
+      <Ore Value="225" Type="Silicon_01" Start="9" Depth="4" TargetColor="#616c83" ColorInfluence="15"/>
+      <Ore Value="165" Type="Silicon_01" Start="9" Depth="4" TargetColor="#616c83" ColorInfluence="15"/>
+      <Ore Value="235" Type="Nickel_01" Start="10" Depth="4" TargetColor="#616c83" ColorInfluence="15"/>
+      <Ore Value="175" Type="Nickel_01" Start="10" Depth="4" TargetColor="#616c83" ColorInfluence="15"/>
       <Ore Value="155" Type="Copper" Start="12" Depth="5" TargetColor="#616c83" ColorInfluence="15"/>
       <Ore Value="145" Type="Copper" Start="12" Depth="5" TargetColor="#616c83" ColorInfluence="15"/>
-      <Ore Value="135" Type="Lithium" Start="92" Depth="2" TargetColor="#616c83" ColorInfluence="15"/>
       <Ore Value="125" Type="Bauxite" Start="32" Depth="5" TargetColor="#616c83" ColorInfluence="15"/>
+      <Ore Value="185" Type="Bauxite" Start="32" Depth="5" TargetColor="#616c83" ColorInfluence="15"/>
+      <Ore Value="215" Type="Silver_01" Start="21" Depth="3" TargetColor="#616c83" ColorInfluence="15"/>
+      <Ore Value="195" Type="Cobalt_01" Start="15" Depth="4" TargetColor="#616c83" ColorInfluence="15"/>
       <Ore Value="115" Type="Titanium" Start="103" Depth="5" TargetColor="#616c83" ColorInfluence="15"/>
-      <Ore Value="105" Type="Tantalum" Start="146" Depth="1" TargetColor="#616c83" ColorInfluence="15"/>
-      <Ore Value="95" Type="Coal" Start="40" Depth="10" TargetColor="#616c83" ColorInfluence="15"/>
-      <Ore Value="85" Type="Sulfur" Start="60" Depth="5" TargetColor="#616c83" ColorInfluence="15"/> -->
+      <Ore Value="85" Type="Sulfur" Start="60" Depth="5" TargetColor="#616c83" ColorInfluence="15"/>
     </OreMappings>
 
     <SoundRules>
@@ -4739,7 +4763,7 @@
           <Material>MarsSoil</Material>
         </Materials>
         <Items>
-          <Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" GroupId="StoneCoverageIronCore" ModifierId="Mars" Density="0.003" />
+          <!-- <Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" GroupId="StoneCoverageIronCore" ModifierId="Mars" Density="0.003" /> -->
         </Items>
         <Rule>
           <Height Min="0" Max="0.7"/>
@@ -4756,7 +4780,7 @@
           <Material>MarsRocks</Material>
         </Materials>
         <Items>
-          <Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" GroupId="StoneCoverageIronCore" ModifierId="Mars" Density="0.003" />
+          <!-- <Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" GroupId="StoneCoverageIronCore" ModifierId="Mars" Density="0.003" /> -->
         </Items>
         <Rule>
           <Height Min="0" Max="0.7"/>
@@ -5020,11 +5044,12 @@
     </WeatherGenerators>
   </Definition>
   
+  <!-- Triton -->
   <Definition xsi:type="PlanetGeneratorDefinition">
-      <Id>
-        <TypeId>PlanetGeneratorDefinition</TypeId>
-        <SubtypeId>Triton</SubtypeId>
-      </Id>
+    <Id>
+      <TypeId>PlanetGeneratorDefinition</TypeId>
+      <SubtypeId>Triton</SubtypeId>
+    </Id>
 	  <Difficulty>DifficultyEasy</Difficulty>
 
     <!--!!!Important!! Read if you want to mod Planets! -->
@@ -5071,23 +5096,24 @@
     </DistortionTable>
 
     <OreMappings>
-      <!-- <Ore Value="245" Type="Iron_01" Start="5" Depth="7" TargetColor="#616c83" ColorInfluence="15"/>
-      <Ore Value="235" Type="Nickel_01" Start="10" Depth="4" TargetColor="#616c83" ColorInfluence="15"/>
+      <!-- 20% -->
+      <Ore Value="95" Type="Coal" Start="40" Depth="10" TargetColor="#616c83" ColorInfluence="15"/>
+
+      <!-- 5% -->
+      <Ore Value="205" Type="Iron_01" Start="5" Depth="7" TargetColor="#616c83" ColorInfluence="15"/>
+      <Ore Value="245" Type="Iron_01" Start="5" Depth="7" TargetColor="#616c83" ColorInfluence="15"/>
       <Ore Value="225" Type="Silicon_01" Start="9" Depth="4" TargetColor="#616c83" ColorInfluence="15"/>
-      <Ore Value="215" Type="Silver_01" Start="21" Depth="3" TargetColor="#616c83" ColorInfluence="15"/>
-      <Ore Value="205" Type="Lithium" Start="5" Depth="7" TargetColor="#616c83" ColorInfluence="15"/>
-      <Ore Value="195" Type="Cobalt_01" Start="15" Depth="4" TargetColor="#616c83" ColorInfluence="15"/>
-      <Ore Value="185" Type="Gold_01" Start="75" Depth="3" TargetColor="#616c83" ColorInfluence="15"/>
-      <Ore Value="175" Type="Platinum_01" Start="112" Depth="2" TargetColor="#616c83" ColorInfluence="15"/>
-      <Ore Value="165" Type="Uraninite_01" Start="112" Depth="6" TargetColor="#616c83" ColorInfluence="15"/>
+      <Ore Value="165" Type="Silicon_01" Start="9" Depth="4" TargetColor="#616c83" ColorInfluence="15"/>
+      <Ore Value="235" Type="Nickel_01" Start="10" Depth="4" TargetColor="#616c83" ColorInfluence="15"/>
+      <Ore Value="175" Type="Nickel_01" Start="10" Depth="4" TargetColor="#616c83" ColorInfluence="15"/>
       <Ore Value="155" Type="Copper" Start="12" Depth="5" TargetColor="#616c83" ColorInfluence="15"/>
       <Ore Value="145" Type="Copper" Start="12" Depth="5" TargetColor="#616c83" ColorInfluence="15"/>
-      <Ore Value="135" Type="Lithium" Start="92" Depth="2" TargetColor="#616c83" ColorInfluence="15"/>
       <Ore Value="125" Type="Bauxite" Start="32" Depth="5" TargetColor="#616c83" ColorInfluence="15"/>
+      <Ore Value="185" Type="Bauxite" Start="32" Depth="5" TargetColor="#616c83" ColorInfluence="15"/>
+      <Ore Value="215" Type="Silver_01" Start="21" Depth="3" TargetColor="#616c83" ColorInfluence="15"/>
+      <Ore Value="195" Type="Cobalt_01" Start="15" Depth="4" TargetColor="#616c83" ColorInfluence="15"/>
       <Ore Value="115" Type="Titanium" Start="103" Depth="5" TargetColor="#616c83" ColorInfluence="15"/>
-      <Ore Value="105" Type="Tantalum" Start="146" Depth="1" TargetColor="#616c83" ColorInfluence="15"/>
-      <Ore Value="95" Type="Coal" Start="40" Depth="10" TargetColor="#616c83" ColorInfluence="15"/>
-      <Ore Value="85" Type="Sulfur" Start="60" Depth="5" TargetColor="#616c83" ColorInfluence="15"/> -->
+      <Ore Value="85" Type="Sulfur" Start="60" Depth="5" TargetColor="#616c83" ColorInfluence="15"/>
     </OreMappings>
 
     <SoundRules>
@@ -5602,14 +5628,14 @@
         </Weathers>
       </WeatherGenerator>
       </WeatherGenerators>
-    </Definition>
+  </Definition>
 	
-  
-    <Definition xsi:type="PlanetGeneratorDefinition">
-        <Id>
-          <TypeId>PlanetGeneratorDefinition</TypeId>
-          <SubtypeId>Pertam</SubtypeId>
-        </Id>
+  <!-- Pertam -->
+  <Definition xsi:type="PlanetGeneratorDefinition">
+    <Id>
+      <TypeId>PlanetGeneratorDefinition</TypeId>
+      <SubtypeId>Pertam</SubtypeId>
+    </Id>
 
 
     <Difficulty>DifficultyHard</Difficulty>
@@ -5657,23 +5683,24 @@
       </DistortionTable>
 
       <OreMappings>
-        <!-- <Ore Value="245" Type="Iron_01" Start="15" Depth="10" TargetColor="#616c83" ColorInfluence="15"/>
-        <Ore Value="235" Type="Nickel_01" Start="18" Depth="10" TargetColor="#616c83" ColorInfluence="15"/>
-        <Ore Value="225" Type="Silicon_01" Start="19" Depth="10" TargetColor="#616c83" ColorInfluence="15"/>
-        <Ore Value="215" Type="Silver_01" Start="21" Depth="10" TargetColor="#616c83" ColorInfluence="15"/>
-        <Ore Value="205" Type="Magnesium_01" Start="23" Depth="10" TargetColor="#616c83" ColorInfluence="15"/>
-        <Ore Value="195" Type="Cobalt_01" Start="15" Depth="10" TargetColor="#616c83" ColorInfluence="15"/>
-        <Ore Value="185" Type="Gold_01" Start="75" Depth="10" TargetColor="#616c83" ColorInfluence="15"/>
-        <Ore Value="175" Type="OilSand" Start="15" Depth="10" TargetColor="#616c83" ColorInfluence="15"/>
-        <Ore Value="165" Type="Copper" Start="20" Depth="10" TargetColor="#616c83" ColorInfluence="15"/>
-        <Ore Value="155" Type="OilSand" Start="82" Depth="10" TargetColor="#616c83" ColorInfluence="15"/>
-        <Ore Value="145" Type="OilSand" Start="22" Depth="10" TargetColor="#616c83" ColorInfluence="15"/>
-        <Ore Value="135" Type="Lithium" Start="92" Depth="10" TargetColor="#616c83" ColorInfluence="15"/>
-        <Ore Value="125" Type="Bauxite" Start="32" Depth="10" TargetColor="#616c83" ColorInfluence="15"/>
-        <Ore Value="115" Type="Titanium" Start="103" Depth="10" TargetColor="#616c83" ColorInfluence="15"/>
-        <Ore Value="105" Type="OilSand" Start="82" Depth="10" TargetColor="#616c83" ColorInfluence="15"/>
+        <!-- 20% -->
         <Ore Value="95" Type="Coal" Start="40" Depth="10" TargetColor="#616c83" ColorInfluence="15"/>
-        <Ore Value="85" Type="Sulfur" Start="60" Depth="5" TargetColor="#616c83" ColorInfluence="15"/> -->
+
+        <!-- 5% -->
+        <Ore Value="205" Type="Iron_01" Start="5" Depth="7" TargetColor="#616c83" ColorInfluence="15"/>
+        <Ore Value="245" Type="Iron_01" Start="5" Depth="7" TargetColor="#616c83" ColorInfluence="15"/>
+        <Ore Value="225" Type="Silicon_01" Start="9" Depth="4" TargetColor="#616c83" ColorInfluence="15"/>
+        <Ore Value="165" Type="Silicon_01" Start="9" Depth="4" TargetColor="#616c83" ColorInfluence="15"/>
+        <Ore Value="235" Type="Nickel_01" Start="10" Depth="4" TargetColor="#616c83" ColorInfluence="15"/>
+        <Ore Value="175" Type="Nickel_01" Start="10" Depth="4" TargetColor="#616c83" ColorInfluence="15"/>
+        <Ore Value="155" Type="Copper" Start="12" Depth="5" TargetColor="#616c83" ColorInfluence="15"/>
+        <Ore Value="145" Type="Copper" Start="12" Depth="5" TargetColor="#616c83" ColorInfluence="15"/>
+        <Ore Value="125" Type="Bauxite" Start="32" Depth="5" TargetColor="#616c83" ColorInfluence="15"/>
+        <Ore Value="185" Type="Bauxite" Start="32" Depth="5" TargetColor="#616c83" ColorInfluence="15"/>
+        <Ore Value="215" Type="Silver_01" Start="21" Depth="3" TargetColor="#616c83" ColorInfluence="15"/>
+        <Ore Value="195" Type="Cobalt_01" Start="15" Depth="4" TargetColor="#616c83" ColorInfluence="15"/>
+        <Ore Value="115" Type="Titanium" Start="103" Depth="5" TargetColor="#616c83" ColorInfluence="15"/>
+        <Ore Value="85" Type="Sulfur" Start="60" Depth="5" TargetColor="#616c83" ColorInfluence="15"/>
       </OreMappings>
 
       <SoundRules>
@@ -6193,8 +6220,8 @@
             <Material>DustyRocks3</Material>
           </Materials>
           <Items>
-            <Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" SubtypeId="desertrocks_smallstone" Density="0.01" />
-            <Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" SubtypeId="desertrocks_mediumstone" Density="0.01" />
+            <!-- <Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" SubtypeId="desertrocks_smallstone" Density="0.01" /> -->
+            <!-- <Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" SubtypeId="desertrocks_mediumstone" Density="0.01" /> -->
             <Item TypeId="MyObjectBuilder_DestroyableItems" SubtypeId="PertamSandBushFoliage" Density="1"/>
             <Item TypeId="MyObjectBuilder_DestroyableItems" SubtypeId="GrassOldFoliage" Density="1"/>
             <Item TypeId="MyObjectBuilder_Trees" SubtypeId="PertamSandFoliage" Density="0.04"/>
@@ -6214,8 +6241,8 @@
               <Material>DustyRocks</Material>
             </Materials>
             <Items>
-              <Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" SubtypeId="desertrocks_smallstone" Density="0.01" />
-              <Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" SubtypeId="desertrocks_mediumstone" Density="0.03" />
+              <!-- <Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" SubtypeId="desertrocks_smallstone" Density="0.01" /> -->
+              <!-- <Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" SubtypeId="desertrocks_mediumstone" Density="0.03" /> -->
               <Item TypeId="MyObjectBuilder_DestroyableItems" SubtypeId="PertamSandBushFoliage" Density="0.6"/>
               <Item TypeId="MyObjectBuilder_DestroyableItems" SubtypeId="GrassOldFoliage" Density="0.6"/>
               <Item TypeId="MyObjectBuilder_Trees" SubtypeId="PertamSandFoliage" Density="0.05"/>
@@ -6235,8 +6262,8 @@
               <Material>DustyRocks2</Material>
             </Materials>
             <Items>
-              <Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" SubtypeId="desertrocks_smallstone" Density="0.01" />
-              <Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" SubtypeId="desertrocks_mediumstone" Density="0.03" />
+              <!-- <Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" SubtypeId="desertrocks_smallstone" Density="0.01" /> -->
+              <!-- <Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" SubtypeId="desertrocks_mediumstone" Density="0.03" /> -->
               <Item TypeId="MyObjectBuilder_DestroyableItems" SubtypeId="GrassOldFoliage" Density="0.1"/>
               <Item TypeId="MyObjectBuilder_DestroyableItems" SubtypeId="PertamSandBushFoliage" Density="0.1"/>
               <Item TypeId="MyObjectBuilder_Trees" SubtypeId="PertamSandFoliage" Density="0.02"/>
@@ -6256,8 +6283,8 @@
               <Material>DustyRocks3</Material>
             </Materials>
             <Items>
-              <Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" SubtypeId="desertrocks_smallstone" Density="0.01" />
-              <Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" SubtypeId="desertrocks_mediumstone" Density="0.03" />
+              <!-- <Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" SubtypeId="desertrocks_smallstone" Density="0.01" /> -->
+              <!-- <Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" SubtypeId="desertrocks_mediumstone" Density="0.03" /> -->
               <Item TypeId="MyObjectBuilder_DestroyableItems" SubtypeId="PertamSandBushFoliage" Density="1"/>
               <Item TypeId="MyObjectBuilder_DestroyableItems" SubtypeId="GrassOldFoliage" Density="1"/>
               <Item TypeId="MyObjectBuilder_Trees" SubtypeId="PertamSandFoliage" Density="0.07"/>
