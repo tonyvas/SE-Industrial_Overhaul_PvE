@@ -1,0 +1,98 @@
+﻿<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Parallax-PrefabData-Easy</SubtypeId>
+      </Id>
+      <Description>
+
+        [MES Prefab Data]
+
+        [Prefabs:(NPC-PLX) Basic Shuttle]
+        [Prefabs:(NPC-PLX) Buzzard]
+        [Prefabs:(NPC-PLX) Eidolon]
+        [Prefabs:(NPC-PLX) Hammersled II]
+        [Prefabs:(NPC-PLX) Lightstar]
+        [Prefabs:(NPC-PLX) Phantom]
+        [Prefabs:(NPC-PLX) Pioneer]
+        [Prefabs:(NPC-PLX) Shadow]
+        [Prefabs:(NPC-PLX) Triton]
+        [Prefabs:(NPC-PLX) Verdis Quo]
+
+        [Prefabs:(NPC-PLX) Bunker]
+        [Prefabs:(NPC-PLX) Expedition Base Pod]
+        [Prefabs:(NPC-PLX) Fueling Station]
+        [Prefabs:(NPC-PLX) Military Installation]
+        [Prefabs:(NPC-PLX) Security Outpost]
+
+        [CustomTags:Easy]
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Parallax-PrefabData-Medium</SubtypeId>
+      </Id>
+      <Description>
+
+        [MES Prefab Data]
+
+        [Prefabs:(NPC-PLX) Ward of Lothian]
+        
+        [Prefabs:(NPC-PLX) Frontier Outpost]
+
+        [CustomTags:Medium]
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Parallax-PrefabData-Hard</SubtypeId>
+      </Id>
+      <Description>
+
+        [MES Prefab Data]
+
+        [Prefabs:(NPC-PLX) Blunderbuss]
+        [Prefabs:(NPC-PLX) Thunderhelm]
+        [Prefabs:(NPC-PLX) Spirit of Lomond]
+        [Prefabs:(NPC-PLX) Oban Tide Mk2]
+
+        [CustomTags:Hard]
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Parallax-PrefabData-Station</SubtypeId>
+      </Id>
+      <Description>
+
+        [MES Prefab Data]
+
+        [Prefabs:(NPC-PLX) Frontier Outpost]
+        [Prefabs:(NPC-PLX) Bunker]
+        [Prefabs:(NPC-PLX) Expedition Base Pod]
+        [Prefabs:(NPC-PLX) Fueling Station]
+        [Prefabs:(NPC-PLX) Military Installation]
+
+        [CustomTags:Station]
+
+      </Description>
+
+    </EntityComponent>
+    
+  </EntityComponents>
+</Definitions>

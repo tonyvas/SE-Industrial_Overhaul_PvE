@@ -1,0 +1,45 @@
+﻿<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Parallax-Behavior-Installation</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Behavior]
+
+        [BehaviorName:Passive]
+
+        [WeaponsSystem:MES-Weapons-GenericStandard]
+
+        [Triggers:Parallax-Trigger-CallAtmoCargoShip]
+        [Triggers:Parallax-Trigger-BotCrew]
+        [Triggers:Parallax-Trigger-StationDamage]
+
+        [TriggerGroups:Parallax-TriggerGroup-StationInteractions]
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Parallax-Behavior-BasicInstallation</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Behavior]
+
+        [BehaviorName:Passive]
+        [WeaponsSystem:MES-Weapons-GenericStandard]
+
+      </Description>
+
+    </EntityComponent>
+    
+  </EntityComponents>
+</Definitions>

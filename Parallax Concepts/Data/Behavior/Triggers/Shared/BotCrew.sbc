@@ -1,0 +1,46 @@
+﻿<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Parallax-Trigger-BotCrew</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Trigger]
+
+        [UseTrigger:false]
+        [Type:PlayerNear]
+
+        [TargetDistance:1000]
+
+        [StartsReady:true]
+        [MaxActions:1]
+        [Actions:Parallax-Action-BotCrew]
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Parallax-Action-BotCrew</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Action]
+
+        [AddBotsToGrid:true]
+        [BotCount:3]
+        [BotSpawnProfileNames:Parallax-BotSpawnProfile-CombatBot]
+        [OnlySpawnBotsInPressurizedRooms:true]
+
+      </Description>
+
+    </EntityComponent>
+
+  </EntityComponents>
+</Definitions>

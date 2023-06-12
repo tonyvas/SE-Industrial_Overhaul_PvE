@@ -1,0 +1,143 @@
+﻿<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Parallax-Behavior-Boss</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Behavior]
+
+        [BehaviorName:HorseFighter]
+
+        [AutopilotData:Parallax-AutoPilot-Boss-A]
+        [SecondaryAutopilotData:Parallax-AutoPilot-Boss-B]
+
+        [TargetData:Parallax-Targeting-Boss]
+
+        [Triggers:Parallax-Trigger-BossGreet]
+        [Triggers:Parallax-Trigger-BossAutopilotSwitchA]
+        [Triggers:Parallax-Trigger-BossAutopilotSwitchB]
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Parallax-Targeting-Boss</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Target]
+
+        [UseCustomTargeting:true]
+        [Target:PlayerAndGrid]
+
+        [MaxDistance:15000]
+
+        [MatchAllFilters:OutsideOfSafezone]
+        [MatchAllFilters:Owner]
+        [MatchAllFilters:Relation]
+        [GetTargetBy:ClosestDistance]
+
+        [Owners:Player]
+        [Owners:NPC]
+        [Relations:Enemy]
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Parallax-AutoPilot-Boss-A</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Autopilot]
+
+        [SlowDownOnWaypointApproach:true]
+        [ExtraSlowDownDistance:250]
+        [FlyLevelWithGravity:true]
+        [ForceDampenersEnabled:true]
+
+        [IdealMinSpeed:18]
+        [IdealMaxSpeed:100]
+        [MaxSpeedTolerance:5]
+
+        [MinimumPlanetAltitude:500]
+        [IdealPlanetAltitude:600]
+
+        [WaypointTolerance:50]
+
+        [WaypointWaitTimeTrigger:8]
+
+        [AllowStrafing:true]
+        [StrafeMaxDurationMs:3000]
+        [StrafeSpeedCutOff:20]
+
+        [OffsetSpaceMinDistFromTarget:300]
+        [OffsetSpaceMaxDistFromTarget:600]
+        [OffsetPlanetMinDistFromTarget:300]
+        [OffsetPlanetMaxDistFromTarget:600]
+        [OffsetPlanetMinTargetAltitude:500]
+        [OffsetPlanetMaxTargetAltitude:600]
+
+        [LimitRotationSpeed:true]
+        [MaxRotationMagnitude:0.4]
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Parallax-AutoPilot-Boss-B</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Autopilot]
+
+        [SlowDownOnWaypointApproach:true]
+        [ExtraSlowDownDistance:250]
+        [FlyLevelWithGravity:false]
+        [ForceDampenersEnabled:true]
+
+        [IdealMinSpeed:18]
+        [IdealMaxSpeed:100]
+        [MaxSpeedTolerance:5]
+
+        [MinimumPlanetAltitude:500]
+        [IdealPlanetAltitude:600]
+
+        [WaypointTolerance:50]
+
+        [WaypointWaitTimeTrigger:8]
+
+        [AllowStrafing:true]
+        [StrafeMaxDurationMs:3000]
+        [StrafeSpeedCutOff:20]
+
+        [OffsetSpaceMinDistFromTarget:300]
+        [OffsetSpaceMaxDistFromTarget:600]
+        [OffsetPlanetMinDistFromTarget:300]
+        [OffsetPlanetMaxDistFromTarget:600]
+        [OffsetPlanetMinTargetAltitude:500]
+        [OffsetPlanetMaxTargetAltitude:600]
+
+        [LimitRotationSpeed:true]
+        [MaxRotationMagnitude:0.6]
+
+      </Description>
+
+    </EntityComponent>
+
+  </EntityComponents>
+</Definitions>

@@ -1,0 +1,102 @@
+﻿<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Imber-Trigger-ParallaxPresence</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Trigger]
+
+        [UseTrigger:true]
+        [Type:CommandReceived]
+        [CommandReceiveCode:Parallax-Command-Presence]
+
+        [StartsReady:true]
+        [MaxActions:-1]
+        [Actions:Imber-Action-ParallaxPresence]
+
+      </Description>
+
+    </EntityComponent>
+
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Imber-Action-ParallaxPresence</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Action]
+
+        [Chance:2]
+
+        [UseChatBroadcast:true]
+        [ChatData:Imber-Chat-ParallaxPresence]
+
+        [DisableTriggers:true]
+        [DisableTriggerNames:Imber-Trigger-ParallaxPresence]
+
+        [BroadcastCommandProfiles:true]
+        [CommandProfileIds:Imber-Command-ImberParallaxA]
+
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Imber-Chat-ParallaxPresence</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Chat]
+
+        [UseChat:true]
+        [StartsReady:true]
+        [MaxChats:1]
+        [BroadcastRandomly:true]
+        [Author:Imber Crew]
+        [Color:Red]
+
+        [ChatMessages: Parallax vessel, you are being monitored. We expect you will not cause trouble...]
+        [ChatAudio:ArcHudGPSNotification1]
+        [BroadcastChatType:Chat]
+
+        [ChatMessages: Per the agreement between Imber and Parallax, you will be allowed to proceed in this territory - as long as you show no hostility.]
+        [ChatAudio:ArcHudGPSNotification1]
+        [BroadcastChatType:Chat]
+
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Imber-Command-ImberParallaxA</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Command]
+
+        [CommandCode:Imber-Command-ImberParallaxA]
+
+        [CommandDelayTicks:300]
+        [SendSelfAsTargetEntityId:true]
+        [SendGridValue:false]
+        [SingleRecipient:true]
+        [MatchSenderReceiverOwners:false]
+        [IgnoreReceiverAntennaRequirement:true]
+
+      </Description>
+
+    </EntityComponent>
+    
+  </EntityComponents>
+</Definitions>

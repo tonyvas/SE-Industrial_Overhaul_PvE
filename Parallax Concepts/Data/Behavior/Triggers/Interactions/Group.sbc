@@ -1,0 +1,41 @@
+﻿<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Parallax-TriggerGroup-Interactions</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI TriggerGroup]
+
+        [Triggers:Parallax-Trigger-Presence]
+        [Triggers:Parallax-Trigger-ImberParallaxA]
+        [Triggers:Parallax-Trigger-ParallaxPresence]
+        [Triggers:Parallax-Trigger-ReaverPresence]
+        [Triggers:Parallax-Trigger-ReaverPresenceClear]
+
+      </Description>
+
+    </EntityComponent>
+    
+  <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Parallax-TriggerGroup-StationInteractions</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI TriggerGroup]
+
+        [Triggers:Parallax-Trigger-ReaverPresence]
+        [Triggers:Parallax-Trigger-ReaverPresenceClear]
+
+      </Description>
+
+    </EntityComponent>
+    
+  </EntityComponents>
+</Definitions>

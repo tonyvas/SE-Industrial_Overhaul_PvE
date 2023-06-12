@@ -1,0 +1,46 @@
+﻿<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Parallax-Trigger-ReaverPresenceClear</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Trigger]
+
+        [UseTrigger:false]
+        [Type:Timer]
+
+        [MinCooldownMs:8000]
+        [MaxCooldownMs:8001]
+
+        [StartsReady:false]
+        [MaxActions:-1]
+        [Actions:Parallax-Action-ReaverPresenceClear]
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Parallax-Action-ReaverPresenceClear</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Action]
+
+        [EnableHighestRangeAntennas:true]
+        [DisableTriggers:true]
+        [DisableTriggerNames:Parallax-Trigger-ReaverPresenceClear]
+
+      </Description>
+
+    </EntityComponent>
+
+  </EntityComponents>
+</Definitions>

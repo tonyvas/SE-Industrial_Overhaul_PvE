@@ -1,0 +1,135 @@
+﻿<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Parallax-Behavior-Escort</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Behavior]
+
+        [BehaviorName:Escort]
+
+        [TargetData:Parallax-Targeting-EscortDrone]
+
+        [AutopilotData:Parallax-AutoPilot-EscortDrone-A]
+        [SecondaryAutopilotData:Parallax-AutoPilot-EscortDrone-B]
+
+        [Triggers:Parallax-Trigger-RequestEscortSlot]
+        [Triggers:Parallax-Trigger-AggressionSwitchEscort]
+        [Triggers:Parallax-Trigger-PassiveSwitchEscort]
+
+        [Triggers:Parallax-Trigger-ReaverPresenceNoChat]
+        [Triggers:Parallax-Trigger-ReaverPresenceClear]
+
+        [Triggers:MES-Trigger-NoTargetRetreatInitialCheck]
+        [Triggers:MES-Trigger-NoTargetRetreatCheck]
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Parallax-Targeting-EscortDrone</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Target]
+
+        [UseCustomTargeting:true]
+        [Target:PlayerAndGrid]
+
+        [MaxDistance:1500]
+        [MaxExistingTargetDistance:3500]
+
+        [MatchAllFilters:OutsideOfSafezone]
+        [MatchAllFilters:Owner]
+        [MatchAllFilters:Relation]
+        [GetTargetBy:ClosestDistance]
+
+        [Owners:Player]
+        [Owners:NPC]
+        [Relations:Enemy]
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Parallax-AutoPilot-EscortDrone-A</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Autopilot]
+
+        [DisableInertiaDampeners:false]
+        [SlowDownOnWaypointApproach:true]
+        [FlyLevelWithGravity:false]
+        [MinimumPlanetAltitude:75]
+        [IdealPlanetAltitude:150]
+        [WaypointTolerance:5]
+        [UseVelocityCollisionEvasion:true]
+        [WaypointWaitTimeTrigger:20]
+
+        [IdealMinSpeed:12]
+        [IdealMaxSpeed:100]
+        [MaxSpeedTolerance:3]
+
+        [LimitRotationSpeed:true]
+        [MaxRotationMagnitude:0.75]
+
+        [EscortSpeedMatchMinDistance:5]
+
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Parallax-AutoPilot-EscortDrone-B</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Autopilot]
+
+        [SlowDownOnWaypointApproach:true]
+        [ExtraSlowDownDistance:50]
+        [FlyLevelWithGravity:false]
+
+        [IdealMinSpeed:12]
+        [IdealMaxSpeed:100]
+        [MaxSpeedTolerance:3]
+
+        [MinimumPlanetAltitude:150]
+        [IdealPlanetAltitude:300]
+
+        [UseVelocityCollisionEvasion:false]
+        [LimitRotationSpeed:true]
+        [MaxRotationMagnitude:1.5]
+
+        [OffsetSpaceMinDistFromTarget:1200]
+        [OffsetSpaceMaxDistFromTarget:1500]
+
+        [OffsetPlanetMinDistFromTarget:200]
+        [OffsetPlanetMaxDistFromTarget:450]
+        [OffsetPlanetMinTargetAltitude:1200]
+        [OffsetPlanetMaxTargetAltitude:1500]
+        [ReverseOffsetDistAltAboveHeight:true]
+
+        [AngleAllowedForForwardThrust:75]
+
+      </Description>
+
+    </EntityComponent>
+
+  </EntityComponents>
+</Definitions>

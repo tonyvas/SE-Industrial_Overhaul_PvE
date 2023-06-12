@@ -1,0 +1,651 @@
+﻿<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SpawnGroups>
+
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>Parallax-SpawnGroup-BasicShuttle</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+
+        [SpawnConditionGroups:MES-SpawnConditionsGroup-SpaceCargoShip]
+        [FactionOverride:PARALLAX]
+        [ReplenishSystems:true]
+        [UseFirstConditionsAsPersistent:true]
+        [ManipulationGroups:Parallax-Manipulation-Group]
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>1.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-PLX) Basic Shuttle">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>Parallax-Behavior-CargoShip</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-PLX) Arrowhead">
+          <Position>
+            <X>-150.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>Parallax-Behavior-Escort</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-PLX) Arrowhead">
+          <Position>
+            <X>150.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>Parallax-Behavior-Escort</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>Parallax-SpawnGroup-Buzzard</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+
+        [SpawnConditionGroups:MES-SpawnConditionsGroup-SpaceCargoShip]
+        [FactionOverride:PARALLAX]
+        [ReplenishSystems:true]
+        [UseFirstConditionsAsPersistent:true]
+        [ManipulationGroups:Parallax-Manipulation-Group]
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>2.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-PLX) Buzzard">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>Parallax-Behavior-CargoShip</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-PLX) Arrowhead">
+          <Position>
+            <X>-150.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>Parallax-Behavior-Escort</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-PLX) Arrowhead">
+          <Position>
+            <X>150.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>Parallax-Behavior-Escort</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>Parallax-SpawnGroup-Eidolon</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+
+        [SpawnConditionGroups:MES-SpawnConditionsGroup-AllCargoShipA]
+        [FactionOverride:PARALLAX]
+        [ReplenishSystems:true]
+        [UseFirstConditionsAsPersistent:true]
+        [ManipulationGroups:Parallax-Manipulation-Group]
+        [MaxGravity:1.5]
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>3.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-PLX) Eidolon">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>Parallax-Behavior-CargoShip</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-PLX) Arrowhead">
+          <Position>
+            <X>-150.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>Parallax-Behavior-Escort</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-PLX) Arrowhead">
+          <Position>
+            <X>150.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>Parallax-Behavior-Escort</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>Parallax-SpawnGroup-HammersledII</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+
+        [SpawnConditionGroups:MES-SpawnConditionsGroup-SpaceCargoShip]
+        [FactionOverride:PARALLAX]
+        [ReplenishSystems:true]
+        [UseFirstConditionsAsPersistent:true]
+        [ManipulationGroups:Parallax-Manipulation-Group]
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>2.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-PLX) Hammersled II">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>Parallax-Behavior-CargoShip</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-PLX) Arrowhead">
+          <Position>
+            <X>-150.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>Parallax-Behavior-Escort</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-PLX) Arrowhead">
+          <Position>
+            <X>150.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>Parallax-Behavior-Escort</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>Parallax-SpawnGroup-Lightstar</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+
+        [SpawnConditionGroups:MES-SpawnConditionsGroup-SpaceCargoShip]
+        [FactionOverride:PARALLAX]
+        [ReplenishSystems:true]
+        [UseFirstConditionsAsPersistent:true]
+        [ManipulationGroups:Parallax-Manipulation-Group]
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>4.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-PLX) Lightstar">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>Parallax-Behavior-CargoShip</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-PLX) Arrowhead">
+          <Position>
+            <X>-150.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>Parallax-Behavior-Escort</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-PLX) Arrowhead">
+          <Position>
+            <X>150.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>Parallax-Behavior-Escort</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>Parallax-SpawnGroup-ObanTideMk2</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+
+        [SpawnConditionGroups:MES-SpawnConditionsGroup-AllCargoShipB]
+        [FactionOverride:PARALLAX]
+        [ReplenishSystems:true]
+        [UseFirstConditionsAsPersistent:true]
+        [ManipulationGroups:Parallax-Manipulation-Group]
+        [MaxGravity:2]
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>4.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-PLX) Oban Tide Mk2">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>Parallax-Behavior-CargoShip</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-PLX) Arrowhead">
+          <Position>
+            <X>-150.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>Parallax-Behavior-Escort</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-PLX) Arrowhead">
+          <Position>
+            <X>150.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>Parallax-Behavior-Escort</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>Parallax-SpawnGroup-Phantom</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+
+        [SpawnConditionGroups:MES-SpawnConditionsGroup-SpaceCargoShip]
+        [FactionOverride:PARALLAX]
+        [ReplenishSystems:true]
+        [UseFirstConditionsAsPersistent:true]
+        [ManipulationGroups:Parallax-Manipulation-Group]
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>2.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-PLX) Phantom">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>Parallax-Behavior-CargoShip</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-PLX) Arrowhead">
+          <Position>
+            <X>-150.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>Parallax-Behavior-Escort</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-PLX) Arrowhead">
+          <Position>
+            <X>150.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>Parallax-Behavior-Escort</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>Parallax-SpawnGroup-Pioneer</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+
+        [SpawnConditionGroups:MES-SpawnConditionsGroup-SpaceCargoShip]
+        [FactionOverride:PARALLAX]
+        [ReplenishSystems:true]
+        [UseFirstConditionsAsPersistent:true]
+        [ManipulationGroups:Parallax-Manipulation-Group]
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>3.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-PLX) Pioneer">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>Parallax-Behavior-CargoShip</Behaviour>
+        </Prefab>
+      </Prefabs>
+      <Prefab SubtypeId="(NPC-PLX) Arrowhead">
+        <Position>
+          <X>-150.0</X>
+          <Y>0.0</Y>
+          <Z>0.0</Z>
+        </Position>
+        <Speed>18</Speed>
+        <Behaviour>Parallax-Behavior-Escort</Behaviour>
+      </Prefab>
+      <Prefab SubtypeId="(NPC-PLX) Arrowhead">
+        <Position>
+          <X>150.0</X>
+          <Y>0.0</Y>
+          <Z>0.0</Z>
+        </Position>
+        <Speed>18</Speed>
+        <Behaviour>Parallax-Behavior-Escort</Behaviour>
+      </Prefab>
+    </SpawnGroup>
+
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>Parallax-SpawnGroup-Shadow</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+
+        [SpawnConditionGroups:MES-SpawnConditionsGroup-AllCargoShipB]
+        [FactionOverride:PARALLAX]
+        [ReplenishSystems:true]
+        [UseFirstConditionsAsPersistent:true]
+        [ManipulationGroups:Parallax-Manipulation-Group]
+        [MaxGravity:1.5]
+
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>4.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-PLX) Shadow">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>Parallax-Behavior-CargoShip</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-PLX) Arrowhead">
+          <Position>
+            <X>-150.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>Parallax-Behavior-Escort</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-PLX) Arrowhead">
+          <Position>
+            <X>150.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>Parallax-Behavior-Escort</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>Parallax-SpawnGroup-SpiritOfLomond</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+
+        [SpawnConditionGroups:MES-SpawnConditionsGroup-AllCargoShipB]
+        [FactionOverride:PARALLAX]
+        [ReplenishSystems:true]
+        [UseFirstConditionsAsPersistent:true]
+        [ManipulationGroups:Parallax-Manipulation-Group]
+        [MaxGravity:1.4]
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>3.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-PLX) Spirit of Lomond">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>Parallax-Behavior-CargoShip</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-PLX) Arrowhead">
+          <Position>
+            <X>-150.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>Parallax-Behavior-Escort</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-PLX) Arrowhead">
+          <Position>
+            <X>150.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>Parallax-Behavior-Escort</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+    
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>Parallax-SpawnGroup-Triton</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+
+        [SpawnConditionGroups:MES-SpawnConditionsGroup-AllCargoShipA]
+        [FactionOverride:PARALLAX]
+        [ReplenishSystems:true]
+        [UseFirstConditionsAsPersistent:true]
+        [ManipulationGroups:Parallax-Manipulation-Group]
+        [WeaponRandomizationOverrideProfile:Parallax-Manipulation-RandomizationLimits]
+        [MaxGravity:1.6]
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>2.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-PLX) Triton">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>Parallax-Behavior-CargoShip</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-PLX) Arrowhead">
+          <Position>
+            <X>-150.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>Parallax-Behavior-Escort</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-PLX) Arrowhead">
+          <Position>
+            <X>150.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>Parallax-Behavior-Escort</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>Parallax-SpawnGroup-VerdisQuo</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+
+        [SpawnConditionGroups:MES-SpawnConditionsGroup-SpaceCargoShip]
+        [FactionOverride:PARALLAX]
+        [ReplenishSystems:true]
+        [UseFirstConditionsAsPersistent:true]
+        [ManipulationGroups:Parallax-Manipulation-Group]
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>4.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-PLX) Verdis Quo">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>Parallax-Behavior-CargoShip</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-PLX) Arrowhead">
+          <Position>
+            <X>-150.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>Parallax-Behavior-Escort</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-PLX) Arrowhead">
+          <Position>
+            <X>150.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>Parallax-Behavior-Escort</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>Parallax-SpawnGroup-WardOfLothian</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+
+        [SpawnConditionGroups:MES-SpawnConditionsGroup-AllCargoShipB]
+        [FactionOverride:PARALLAX]
+        [ReplenishSystems:true]
+        [UseFirstConditionsAsPersistent:true]
+        [ManipulationGroups:Parallax-Manipulation-Group]
+        [MaxGravity:1.0]
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>5.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-PLX) Ward of Lothian">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>Parallax-Behavior-CargoShip</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-PLX) Arrowhead">
+          <Position>
+            <X>-150.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>Parallax-Behavior-Escort</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-PLX) Arrowhead">
+          <Position>
+            <X>150.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>Parallax-Behavior-Escort</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+  </SpawnGroups>
+</Definitions>
