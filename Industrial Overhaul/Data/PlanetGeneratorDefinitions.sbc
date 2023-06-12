@@ -74,8 +74,8 @@
       <Ore Value="135" Type="Silicon_01" Start="92" Depth="2" TargetColor="#616c83" ColorInfluence="15"/>
       <Ore Value="145" Type="Copper" Start="12" Depth="5" TargetColor="#616c83" ColorInfluence="15"/>
       <Ore Value="165" Type="Copper" Start="12" Depth="5" TargetColor="#616c83" ColorInfluence="15"/>
-      <Ore Value="155" Type="OilSand" Start="82" Depth="8" TargetColor="#616c83" ColorInfluence="15"/>
-      <Ore Value="105" Type="OilSand" Start="82" Depth="8" TargetColor="#616c83" ColorInfluence="15"/>
+      <!-- <Ore Value="155" Type="OilSand" Start="82" Depth="8" TargetColor="#616c83" ColorInfluence="15"/> -->
+      <!-- <Ore Value="105" Type="OilSand" Start="82" Depth="8" TargetColor="#616c83" ColorInfluence="15"/> -->
       
       <Ore Value="195" Type="Cobalt_01" Start="15" Depth="4" TargetColor="#616c83" ColorInfluence="15"/>
       <Ore Value="215" Type="Silver_01" Start="21" Depth="3" TargetColor="#616c83" ColorInfluence="15"/>
@@ -1811,8 +1811,8 @@
       <Ore Value="135" Type="Silicon_01" Start="92" Depth="2" TargetColor="#616c83" ColorInfluence="15"/>
       <Ore Value="145" Type="Copper" Start="12" Depth="5" TargetColor="#616c83" ColorInfluence="15"/>
       <Ore Value="165" Type="Copper" Start="12" Depth="5" TargetColor="#616c83" ColorInfluence="15"/>
-      <Ore Value="155" Type="OilSand" Start="82" Depth="8" TargetColor="#616c83" ColorInfluence="15"/>
-      <Ore Value="105" Type="OilSand" Start="82" Depth="8" TargetColor="#616c83" ColorInfluence="15"/>
+      <!-- <Ore Value="155" Type="OilSand" Start="82" Depth="8" TargetColor="#616c83" ColorInfluence="15"/> -->
+      <!-- <Ore Value="105" Type="OilSand" Start="82" Depth="8" TargetColor="#616c83" ColorInfluence="15"/> -->
       
       <Ore Value="195" Type="Cobalt_01" Start="15" Depth="4" TargetColor="#616c83" ColorInfluence="15"/>
       <Ore Value="215" Type="Silver_01" Start="21" Depth="3" TargetColor="#616c83" ColorInfluence="15"/>
