@@ -147,7 +147,7 @@
       <Icon>Textures\GUI\Icons\Cubes\OxygenGenerator.dds</Icon>
       <Description>Melts and electroyzes water ice into Oxygen and Hydrogen.
 	  
-	  Power Usage: 1MW</Description>
+	  Power Usage: 2.5MW</Description>
       <CubeSize>Large</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Size x="1" y="2" z="1" />
@@ -191,21 +191,21 @@
         <Z>2</Z>
       </InventorySize>
       <StandbyPowerConsumption>0.001</StandbyPowerConsumption>
-      <OperationalPowerConsumption>1</OperationalPowerConsumption>
+      <OperationalPowerConsumption>2.5</OperationalPowerConsumption>
       <ProducedGases>
         <GasInfo>
           <Id>
             <TypeId>GasProperties</TypeId>
             <SubtypeId>Oxygen</SubtypeId>
           </Id>
-          <IceToGasRatio>5</IceToGasRatio>
+          <IceToGasRatio>0.5</IceToGasRatio>
         </GasInfo>
         <GasInfo>
           <Id>
             <TypeId>GasProperties</TypeId>
             <SubtypeId>Hydrogen</SubtypeId>
           </Id>
-          <IceToGasRatio>10</IceToGasRatio>
+          <IceToGasRatio>1</IceToGasRatio>
         </GasInfo>
       </ProducedGases>
       <BlueprintClasses>
@@ -310,14 +310,14 @@
             <TypeId>GasProperties</TypeId>
             <SubtypeId>Oxygen</SubtypeId>
           </Id>
-          <IceToGasRatio>5</IceToGasRatio>
+          <IceToGasRatio>0.5</IceToGasRatio>
         </GasInfo>
         <GasInfo>
           <Id>
             <TypeId>GasProperties</TypeId>
             <SubtypeId>Hydrogen</SubtypeId>
           </Id>
-          <IceToGasRatio>10</IceToGasRatio>
+          <IceToGasRatio>1</IceToGasRatio>
         </GasInfo>
       </ProducedGases>
       <BlueprintClasses>
