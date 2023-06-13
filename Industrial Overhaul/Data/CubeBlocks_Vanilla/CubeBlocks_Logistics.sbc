@@ -8,7 +8,7 @@
       </Id>
       <DisplayName>DisplayName_Block_OxygenTank</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\OxygenTankSmall.dds</Icon>
-      <Description>Stores Oxygen. 3,000L capacity.
+      <Description>Stores Oxygen. 4,000L capacity.
 	  Caution: Compressed gases are volatile.</Description>
       <CubeSize>Small</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
@@ -48,7 +48,7 @@
       <EdgeType>Light</EdgeType>
       <ResourceSourceGroup>Reactors</ResourceSourceGroup>
       <ResourceSinkGroup>Factory</ResourceSinkGroup>
-      <Capacity>3000</Capacity>
+      <Capacity>4000</Capacity>
       <InventoryMaxVolume>4</InventoryMaxVolume>
       <InventorySize>
         <X>2</X>
@@ -89,7 +89,7 @@
       </Id>
       <DisplayName>DisplayName_Block_OxygenTank</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\OxygenTank.dds</Icon>
-      <Description>Stores Oxygen. 30,000L capacity.
+      <Description>Stores Oxygen. 40,000L capacity.
 	  Caution: Compressed gases are volatile.</Description>
       <CubeSize>Large</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
@@ -134,7 +134,7 @@
       <ResourceSinkGroup>Factory</ResourceSinkGroup>
       <OperationalPowerConsumption>0.001</OperationalPowerConsumption>
       <StandbyPowerConsumption>0.000001</StandbyPowerConsumption>
-      <Capacity>30000</Capacity>
+      <Capacity>40000</Capacity>
       <InventoryMaxVolume>4</InventoryMaxVolume>
       <InventorySize>
         <X>2</X>
@@ -177,7 +177,7 @@
       </Id>
       <DisplayName>DisplayName_Block_HydrogenTank</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\HydrogenTank.dds</Icon>
-      <Description>Stores Hydrogen. 400,000L capacity.
+      <Description>Stores Hydrogen. 500,000L capacity.
 	  Caution: Compressed gases are volatile.</Description>
       <Public>true</Public>
       <CubeSize>Large</CubeSize>
@@ -220,7 +220,7 @@
       <ResourceSinkGroup>Factory</ResourceSinkGroup>
       <OperationalPowerConsumption>0.001</OperationalPowerConsumption>
       <StandbyPowerConsumption>0.000001</StandbyPowerConsumption>
-      <Capacity>400000</Capacity>
+      <Capacity>500000</Capacity>
       <InventoryMaxVolume>0.75</InventoryMaxVolume>
       <InventorySize>
         <X>2</X>
@@ -260,7 +260,7 @@
       </Id>
       <DisplayName>DisplayName_Block_HydrogenTankSmall</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\largeHydrogenTankSmall.dds</Icon>
-      <Description>Stores Hydrogen. 30,000L capacity.
+      <Description>Stores Hydrogen. 40,000L capacity.
 	  Caution: Compressed gases are volatile.</Description>
       <Public>true</Public>
       <CubeSize>Large</CubeSize>
@@ -298,7 +298,7 @@
       <ResourceSinkGroup>Factory</ResourceSinkGroup>
       <OperationalPowerConsumption>0.001</OperationalPowerConsumption>
       <StandbyPowerConsumption>0.000001</StandbyPowerConsumption>
-      <Capacity>30000 </Capacity>
+      <Capacity>40000 </Capacity>
       <InventoryMaxVolume>0.75</InventoryMaxVolume>
       <InventorySize>
         <X>2</X>
@@ -336,7 +336,7 @@
       </Id>
       <DisplayName>DisplayName_Block_HydrogenTank</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\HydrogenTank.dds</Icon>
-      <Description>Stores Hydrogen. 15,000L capacity.
+      <Description>Stores Hydrogen. 20,000L capacity.
 	  Caution: Compressed gases are volatile.</Description>
       <CubeSize>Small</CubeSize>
         <GuiVisible>false</GuiVisible>
@@ -391,7 +391,7 @@
       <ResourceSinkGroup>Factory</ResourceSinkGroup>
       <OperationalPowerConsumption>0.001</OperationalPowerConsumption>
       <StandbyPowerConsumption>0.000001</StandbyPowerConsumption>
-      <Capacity>15000</Capacity>
+      <Capacity>20000</Capacity>
       <InventoryMaxVolume>0.75</InventoryMaxVolume>
       <InventorySize>
         <X>2</X>
@@ -431,7 +431,7 @@
       </Id>
       <DisplayName>DisplayName_Block_HydrogenTankSmall</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\SmallHydrogenTankSmall.dds</Icon>
-      <Description>Stores Hydrogen. 500L capacity.
+      <Description>Stores Hydrogen. 600L capacity.
 	  Caution: Compressed gases are volatile.</Description>
       <Public>true</Public>
       <CubeSize>Small</CubeSize>
@@ -469,7 +469,7 @@
       <ResourceSinkGroup>Factory</ResourceSinkGroup>
       <OperationalPowerConsumption>0.0002</OperationalPowerConsumption>
       <StandbyPowerConsumption>0.0000002</StandbyPowerConsumption>
-      <Capacity>500</Capacity>
+      <Capacity>600</Capacity>
       <InventoryMaxVolume>0.12</InventoryMaxVolume>
       <InventorySize>
         <X>2</X>
