@@ -17,22 +17,8 @@
         [ContainerTypes:MES-ContainerTypes-MixedAmmo-2]
         [ContainerTypes:MES-ContainerTypes-MixedAmmo-3]
 
-        <!-- [ContainerTypes:MES-ContainerTypes-MixedComponents-3] -->
-        <!-- [ContainerTypes:MES-ContainerTypes-MixedComponents-4] -->
-
-        <!-- [ContainerTypes:MES-ContainerTypes-MixedIngots-2] -->
-        <!-- [ContainerTypes:MES-ContainerTypes-MixedIngots-3] -->
-
         [ContainerTypes:MES-ContainerTypes-MixedOres-2]
         [ContainerTypes:MES-ContainerTypes-MixedOres-3]
-
-        <!-- [ContainerTypes:MES-ContainerTypes-Credits-3] -->
-        <!-- [ContainerTypes:MES-ContainerTypes-Credits-3] -->
-        <!-- [ContainerTypes:MES-ContainerTypes-Credits-4] -->
-
-        <!-- [ContainerTypes:MES-ContainerTypes-Explosives-2] -->
-        <!-- [ContainerTypes:MES-ContainerTypes-Explosives-3] -->
-        <!-- [ContainerTypes:MES-ContainerTypes-Explosives-4] -->
 
         [MinBlocks:1]
         [MaxBlocks:2]

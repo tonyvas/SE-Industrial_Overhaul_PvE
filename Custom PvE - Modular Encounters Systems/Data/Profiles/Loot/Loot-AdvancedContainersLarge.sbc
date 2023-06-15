@@ -17,22 +17,8 @@
         [ContainerTypes:MES-ContainerTypes-AdvancedAmmo-2]
         [ContainerTypes:MES-ContainerTypes-AdvancedAmmo-3]
 
-        <!-- [ContainerTypes:MES-ContainerTypes-AdvancedComponents-3] -->
-        <!-- [ContainerTypes:MES-ContainerTypes-AdvancedComponents-4] -->
-
-        <!-- [ContainerTypes:MES-ContainerTypes-AdvancedIngots-2] -->
-        <!-- [ContainerTypes:MES-ContainerTypes-AdvancedIngots-3] -->
-
         [ContainerTypes:MES-ContainerTypes-AdvancedOres-2]
 		[ContainerTypes:MES-ContainerTypes-AdvancedOres-3]
-
-        <!-- [ContainerTypes:MES-ContainerTypes-Credits-3] -->
-        <!-- [ContainerTypes:MES-ContainerTypes-Credits-3] -->
-        <!-- [ContainerTypes:MES-ContainerTypes-Credits-4] -->
-
-        <!-- [ContainerTypes:MES-ContainerTypes-Explosives-2] -->
-        <!-- [ContainerTypes:MES-ContainerTypes-Explosives-3] -->
-        <!-- [ContainerTypes:MES-ContainerTypes-Explosives-4] -->
 
         [MinBlocks:1]
         [MaxBlocks:2]
