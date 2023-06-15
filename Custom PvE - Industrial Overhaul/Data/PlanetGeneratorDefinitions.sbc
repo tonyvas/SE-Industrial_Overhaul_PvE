@@ -63,7 +63,7 @@
 
     <OreMappings>
       <!-- 20% -->
-      <Ore Value="95" Type="Coal" Start="40" Depth="10" TargetColor="#616c83" ColorInfluence="15"/>
+      <Ore Value="95" Type="Ice" Start="40" Depth="10" TargetColor="#616c83" ColorInfluence="15"/>
     
       <!-- 5% -->
       <Ore Value="245" Type="Iron_01" Start="15" Depth="7" TargetColor="#616c83" ColorInfluence="15"/>
@@ -1800,7 +1800,7 @@
 
     <OreMappings>
       <!-- 20% -->
-      <Ore Value="95" Type="Coal" Start="40" Depth="10" TargetColor="#616c83" ColorInfluence="15"/>
+      <Ore Value="95" Type="Ice" Start="40" Depth="10" TargetColor="#616c83" ColorInfluence="15"/>
     
       <!-- 5% -->
       <Ore Value="245" Type="Iron_01" Start="15" Depth="7" TargetColor="#616c83" ColorInfluence="15"/>
@@ -3473,7 +3473,7 @@
 
     <OreMappings>
       <!-- 20% -->
-      <Ore Value="95" Type="Coal" Start="40" Depth="10" TargetColor="#616c83" ColorInfluence="15"/>
+      <Ore Value="95" Type="Ice" Start="40" Depth="10" TargetColor="#616c83" ColorInfluence="15"/>
     
       <!-- 5% -->
       <Ore Value="245" Type="Iron_01" Start="15" Depth="7" TargetColor="#616c83" ColorInfluence="15"/>
@@ -4135,7 +4135,7 @@
 
     <OreMappings>
       <!-- 20% -->
-      <Ore Value="95" Type="Coal" Start="40" Depth="10" TargetColor="#616c83" ColorInfluence="15"/>
+      <Ore Value="95" Type="Ice" Start="40" Depth="10" TargetColor="#616c83" ColorInfluence="15"/>
 
       <!-- 5% -->
       <Ore Value="205" Type="Iron_01" Start="5" Depth="7" TargetColor="#616c83" ColorInfluence="15"/>
@@ -4252,7 +4252,7 @@
 
     <OreMappings>
       <!-- 20% -->
-      <Ore Value="95" Type="Coal" Start="40" Depth="10" TargetColor="#616c83" ColorInfluence="15"/>
+      <Ore Value="95" Type="Ice" Start="40" Depth="10" TargetColor="#616c83" ColorInfluence="15"/>
 
       <!-- 5% -->
       <Ore Value="205" Type="Iron_01" Start="5" Depth="7" TargetColor="#616c83" ColorInfluence="15"/>
@@ -4524,7 +4524,7 @@
 
     <OreMappings>
       <!-- 20% -->
-      <Ore Value="95" Type="Coal" Start="40" Depth="10" TargetColor="#616c83" ColorInfluence="15"/>
+      <Ore Value="95" Type="Ice" Start="40" Depth="10" TargetColor="#616c83" ColorInfluence="15"/>
 
       <!-- 5% -->
       <Ore Value="205" Type="Iron_01" Start="5" Depth="7" TargetColor="#616c83" ColorInfluence="15"/>
@@ -5097,7 +5097,7 @@
 
     <OreMappings>
       <!-- 20% -->
-      <Ore Value="95" Type="Coal" Start="40" Depth="10" TargetColor="#616c83" ColorInfluence="15"/>
+      <Ore Value="95" Type="Ice" Start="40" Depth="10" TargetColor="#616c83" ColorInfluence="15"/>
 
       <!-- 5% -->
       <Ore Value="205" Type="Iron_01" Start="5" Depth="7" TargetColor="#616c83" ColorInfluence="15"/>
@@ -5684,7 +5684,7 @@
 
       <OreMappings>
         <!-- 20% -->
-        <Ore Value="95" Type="Coal" Start="40" Depth="10" TargetColor="#616c83" ColorInfluence="15"/>
+        <Ore Value="95" Type="Ice" Start="40" Depth="10" TargetColor="#616c83" ColorInfluence="15"/>
 
         <!-- 5% -->
         <Ore Value="205" Type="Iron_01" Start="5" Depth="7" TargetColor="#616c83" ColorInfluence="15"/>
