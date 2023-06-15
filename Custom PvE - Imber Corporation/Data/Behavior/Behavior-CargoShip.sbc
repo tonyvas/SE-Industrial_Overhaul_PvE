@@ -1,0 +1,177 @@
+﻿<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Imber-Behavior-CargoShip</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Behavior]
+
+        [BehaviorName:CargoShip]
+
+        [AutopilotData:Imber-AutoPilot-CargoShip]
+        [SecondaryAutopilotData:Imber-AutoPilot-CargoShip-B]
+        [TertiaryAutopilotData:Imber-AutoPilot-Boss-B]
+
+        [Triggers:Imber-Trigger-AggressionSwitch]
+        [Triggers:Imber-Trigger-PassiveSwitch]
+        [Triggers:Imber-Trigger-PassiveSwitchNoTarget]
+        [Triggers:Imber-Trigger-PathDeviation]
+        [Triggers:Imber-Trigger-ReturnToDespawn]
+        [Triggers:Imber-Trigger-ShipDamage]
+        [Triggers:Imber-Trigger-ReturnToSpeed]
+        [Triggers:Imber-Trigger-BotCrew]
+        [Triggers:Imber-Trigger-ProcessEscortRequest]
+        [Triggers:Imber-Trigger-StationAssistDirect]
+
+        [TriggerGroups:Imber-TriggerGroup-Interactions]
+
+        [EscortOffsets:{X:-100 Y:0 Z:0}]
+        [EscortOffsets:{X:100 Y:0 Z:0}]
+
+        [TargetData:Imber-Targeting-CargoShip]
+        [OverrideTargetData:Imber-Targeting-CargoShip-Override]
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Imber-Targeting-CargoShip</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Target]
+
+        [UseCustomTargeting:true]
+        [Target:PlayerAndGrid]
+
+        [MaxDistance:5000]
+        [MaxExistingTargetDistance:12000]
+
+        [MatchAllFilters:OutsideOfSafezone]
+        [MatchAllFilters:Owner]
+        [MatchAllFilters:Relation]
+        [MatchAllFilters:Powered]
+        [MatchAllFilters:GravityThrust]
+        [GetTargetBy:ClosestDistance]
+
+        [Owners:Player]
+        [Owners:NPC]
+        [Relations:Enemy]
+
+
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Imber-Targeting-CargoShip-Override</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Target]
+
+        [UseCustomTargeting:true]
+        [Target:PlayerAndGrid]
+
+        [MaxDistance:12000]
+
+        [MatchAllFilters:OutsideOfSafezone]
+        [MatchAllFilters:Owner]
+        [MatchAllFilters:Relation]
+        [MatchAllFilters:Powered]
+        [//MatchAllFilters:GravityThrust]
+        [GetTargetBy:ClosestDistance]
+
+        [Owners:Player]
+        [Owners:NPC]
+        [Relations:Enemy]
+
+
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Imber-AutoPilot-CargoShip</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Autopilot]
+
+        [SlowDownOnWaypointApproach:true]
+        [ExtraSlowDownDistance:50]
+        [FlyLevelWithGravity:true]
+        [ForceDampenersEnabled:true]
+
+        [IdealMinSpeed:12]
+        [IdealMaxSpeed:25]
+        [MaxSpeedTolerance:3]
+
+        [MinimumPlanetAltitude:1000]
+        [IdealPlanetAltitude:1200]
+
+        [WaypointTolerance:50]
+        [WaypointWaitTimeTrigger:120]
+
+        [MinAngleForLeveledDescent:135]
+        [MaxAngleForLeveledAscent:90]
+
+        [UseVelocityCollisionEvasion:false]
+        [LimitRotationSpeed:true]
+        [MaxRotationMagnitude:0.2]
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Imber-AutoPilot-CargoShip-B</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Autopilot]
+
+        [SlowDownOnWaypointApproach:true]
+        [ExtraSlowDownDistance:50]
+        [FlyLevelWithGravity:true]
+        [ForceDampenersEnabled:true]
+
+        [IdealMinSpeed:12]
+        [IdealMaxSpeed:25]
+        [MaxSpeedTolerance:3]
+
+        [MinimumPlanetAltitude:50]
+        [IdealPlanetAltitude:100]
+
+        [WaypointTolerance:50]
+        [WaypointWaitTimeTrigger:60]
+
+        [MinAngleForLeveledDescent:135]
+        [MaxAngleForLeveledAscent:90]
+
+        [UseVelocityCollisionEvasion:false]
+        [LimitRotationSpeed:true]
+        [MaxRotationMagnitude:0.2]
+
+      </Description>
+
+    </EntityComponent>
+
+  </EntityComponents>
+</Definitions>

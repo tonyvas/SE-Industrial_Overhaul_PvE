@@ -1,0 +1,517 @@
+﻿<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Parallax-Manipulation-Group</SubtypeId>
+      </Id>
+      <Description>
+
+        [MES Manipulation Group]
+
+        [ManipulationProfiles:MES-Manipulation-RivalAi]
+        [ManipulationProfiles:MES-Manipulation-ResearchPoints]
+        [ManipulationProfiles:Parallax-Manipulation-InhibitorA]
+        [ManipulationProfiles:Parallax-Manipulation-InhibitorB]
+        [ManipulationProfiles:Parallax-Manipulation-DroneThrustHigh]
+        [ManipulationProfiles:Parallax-Manipulation-DroneEnergy]
+        [ManipulationProfiles:Parallax-Manipulation-BasicLoot]
+        [ManipulationProfiles:Parallax-Manipulation-MixedLoot]
+        [ManipulationProfiles:Parallax-Manipulation-AdvancedLoot]
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Parallax-Manipulation-BasicLoot</SubtypeId>
+      </Id>
+      <Description>
+
+        [MES Manipulation]
+
+        [ManipulationRequiredCustomTags:Easy]
+
+        [UseLootProfiles:true]
+        [ClearExistingContainerTypes:true]
+        [LootProfiles:MES-Loot-AntiInhibitor]
+        [LootProfiles:CustomParallax-Loot-BasicContainers]
+        [LootProfiles:CustomParallax-Loot-BasicContainersLarge]
+        [LootProfiles:MES-Loot-Corpses]
+        [LootProfiles:MES-Loot-Freight]
+        [LootProfiles:MES-Loot-Lockers]
+        [LootProfiles:MES-Loot-WeaponRacks]
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Parallax-Manipulation-MixedLoot</SubtypeId>
+      </Id>
+      <Description>
+
+        [MES Manipulation]
+
+        [ManipulationRequiredCustomTags:Medium]
+
+        [UseLootProfiles:true]
+        [ClearExistingContainerTypes:true]
+        [LootProfiles:MES-Loot-AntiInhibitor]
+        [LootProfiles:CustomParallax-Loot-MixedContainers]
+        [LootProfiles:CustomParallax-Loot-MixedContainersLarge]
+        [LootProfiles:MES-Loot-Corpses]
+        [LootProfiles:MES-Loot-Freight]
+        [LootProfiles:MES-Loot-Lockers]
+        [LootProfiles:MES-Loot-WeaponRacks]
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Parallax-Manipulation-AdvancedLoot</SubtypeId>
+      </Id>
+      <Description>
+
+        [MES Manipulation]
+
+        [ManipulationRequiredCustomTags:Hard]
+
+        [UseLootProfiles:true]
+        [ClearExistingContainerTypes:true]
+        [LootProfiles:CustomParallax-Loot-AdvancedContainers]
+        [LootProfiles:CustomParallax-Loot-AdvancedContainersLarge]
+        [LootProfiles:MES-Loot-AntiInhibitor]
+        [LootProfiles:MES-Loot-Corpses]
+        [LootProfiles:MES-Loot-Freight]
+        [LootProfiles:MES-Loot-Lockers]
+        [LootProfiles:MES-Loot-WeaponRacks]
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Parallax-Manipulation-InhibitorA</SubtypeId>
+      </Id>
+      <Description>
+
+        [MES Manipulation]
+
+        [ManipulationAllowedPrefabIndexes:0]
+
+        [ReplaceArmorBlocksWithModules:true]
+        [ModulesForArmorReplacement:MyObjectBuilder_RadioAntenna/MES-Suppressor-Player-Small]
+        [ModulesForArmorReplacement:MyObjectBuilder_RadioAntenna/MES-Suppressor-Player-Large]
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Parallax-Manipulation-InhibitorB</SubtypeId>
+      </Id>
+      <Description>
+
+        [MES Manipulation]
+
+        [ManipulationRequiredCustomTags:Station]
+
+        [ManipulationAllowedPrefabIndexes:0]
+
+        [ReplaceArmorBlocksWithModules:true]
+        [ModulesForArmorReplacement:MyObjectBuilder_RadioAntenna/MES-Suppressor-Drill-Large]
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Parallax-Manipulation-Propulsion</SubtypeId>
+      </Id>
+      <Description>
+
+        [MES Manipulation]
+
+        [SetNpcGyroscopeMultiplier:true]
+        [NpcGyroscopeMultiplier:2.5]
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Parallax-Manipulation-DroneThrust</SubtypeId>
+      </Id>
+      <Description>
+
+        [MES Manipulation]
+
+        [UseBlockReplacerProfile:true]
+        [IgnoreGlobalBlockReplacer:true]
+        [BlockReplacerProfileNames:MES-NpcThrusters-Hydro]
+
+        [ConfigureSpecialNpcThrusters:true]
+        [NpcHydroThrustPowerMultiply:0.0001]
+        [NpcHydroThrustForceMultiply:1]
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Parallax-Manipulation-DroneThrustHigh</SubtypeId>
+      </Id>
+      <Description>
+
+        [MES Manipulation]
+
+        [ManipulationRestrictedPrefabIndexes:0]
+
+        [UseBlockReplacerProfile:true]
+        [IgnoreGlobalBlockReplacer:true]
+        [BlockReplacerProfileNames:MES-NpcThrusters-Hydro]
+
+        [ConfigureSpecialNpcThrusters:true]
+        [NpcHydroThrustPowerMultiply:0.0001]
+        [NpcHydroThrustForceMultiply:2]
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Parallax-Manipulation-DroneEnergy</SubtypeId>
+      </Id>
+      <Description>
+
+        [MES Manipulation]
+
+        [ManipulationRestrictedPrefabIndexes:0]
+
+        [UseBlockReplacerProfile:true]
+        [IgnoreGlobalBlockReplacer:true]
+        [BlockReplacerProfileNames:MES-Energy-SmallBatteryToNpcBattery]
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Parallax-Manipulation-RandomizationLimits</SubtypeId>
+      </Id>
+      <Description>
+
+        [MES Manipulation]
+
+        [ManipulationRestrictedPrefabIndexes:0]
+
+        [WeaponRandomizerTargetBlacklist:MyObjectBuilder_LargeGatlingTurret/SmallGatlingTurret]
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>CustomParallax-Loot-BasicContainers</SubtypeId>
+      </Id>
+      <Description>
+
+        [MES Loot]
+
+        [ContainerBlockTypes:MyObjectBuilder_CargoContainer/SmallBlockMediumContainer]
+        [ContainerBlockTypes:MyObjectBuilder_CargoContainer/SmallBlockLargeContainer]
+        [ContainerBlockTypes:MyObjectBuilder_CargoContainer/LargeBlockSmallContainer]
+        [ContainerBlockTypes:MyObjectBuilder_CargoContainer/LargeBlockLargeContainer]
+        [ContainerBlockTypes:MyObjectBuilder_CargoContainer/LargeBlockLargeIndustrialContainer]
+
+        [ContainerTypes:CustomParallax-ContainerTypes-OresSmall]
+
+        [MinBlocks:3]
+        [MaxBlocks:5]
+
+      </Description>
+
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>CustomParallax-Loot-BasicContainersLarge</SubtypeId>
+      </Id>
+      <Description>
+
+        [MES Loot]
+
+        [ContainerBlockTypes:MyObjectBuilder_CargoContainer/LargeBlockLargeContainer]
+        [ContainerBlockTypes:MyObjectBuilder_CargoContainer/LargeBlockLargeIndustrialContainer]
+
+        [ContainerTypes:CustomParallax-ContainerTypes-OresLarge]
+
+        [MinBlocks:1]
+        [MaxBlocks:2]
+
+      </Description>
+
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>CustomParallax-Loot-MixedContainers</SubtypeId>
+      </Id>
+      <Description>
+
+        [MES Loot]
+
+        [ContainerBlockTypes:MyObjectBuilder_CargoContainer/SmallBlockMediumContainer]
+        [ContainerBlockTypes:MyObjectBuilder_CargoContainer/SmallBlockLargeContainer]
+        [ContainerBlockTypes:MyObjectBuilder_CargoContainer/LargeBlockSmallContainer]
+        [ContainerBlockTypes:MyObjectBuilder_CargoContainer/LargeBlockLargeContainer]
+        [ContainerBlockTypes:MyObjectBuilder_CargoContainer/LargeBlockLargeIndustrialContainer]
+		
+        [ContainerTypes:CustomParallax-ContainerTypes-OresSmall]
+
+        [MinBlocks:2]
+        [MaxBlocks:5]
+
+      </Description>
+
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>CustomParallax-Loot-MixedContainersLarge</SubtypeId>
+      </Id>
+      <Description>
+
+        [MES Loot]
+
+        [ContainerBlockTypes:MyObjectBuilder_CargoContainer/LargeBlockLargeContainer]
+        [ContainerBlockTypes:MyObjectBuilder_CargoContainer/LargeBlockLargeIndustrialContainer]
+
+        [ContainerTypes:CustomParallax-ContainerTypes-OresLarge]
+
+        [MinBlocks:1]
+        [MaxBlocks:2]
+
+      </Description>
+
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>CustomParallax-Loot-AdvancedContainers</SubtypeId>
+      </Id>
+      <Description>
+
+        [MES Loot]
+
+        [ContainerBlockTypes:MyObjectBuilder_CargoContainer/SmallBlockMediumContainer]
+        [ContainerBlockTypes:MyObjectBuilder_CargoContainer/SmallBlockLargeContainer]
+        [ContainerBlockTypes:MyObjectBuilder_CargoContainer/LargeBlockSmallContainer]
+
+        [ContainerTypes:CustomParallax-ContainerTypes-OresSmall]
+
+        [MinBlocks:2]
+        [MaxBlocks:4]
+
+      </Description>
+
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>CustomParallax-Loot-AdvancedContainersLarge</SubtypeId>
+      </Id>
+      <Description>
+
+        [MES Loot]
+
+        [ContainerBlockTypes:MyObjectBuilder_CargoContainer/LargeBlockLargeContainer]
+        [ContainerBlockTypes:MyObjectBuilder_CargoContainer/LargeBlockLargeIndustrialContainer]
+
+        [ContainerTypes:CustomParallax-ContainerTypes-OresLarge]
+
+        [MinBlocks:1]
+        [MaxBlocks:2]
+
+      </Description>
+
+    </EntityComponent>
+
+  </EntityComponents>
+  
+  <ContainerTypes>
+	
+		<ContainerType CountMin="1" CountMax="3">
+			<Id>
+				<TypeId>ContainerTypeDefinition</TypeId>
+				<SubtypeId>CustomParallax-ContainerTypes-OresSmall</SubtypeId>
+			</Id>
+			<Items>
+				<Item AmountMin="2000" AmountMax="5000">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Gold</SubtypeId>
+					</Id>
+				</Item>
+				<Item AmountMin="2000" AmountMax="5000">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Platinum</SubtypeId>
+					</Id>
+				</Item>
+				<Item AmountMin="2000" AmountMax="5000">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Uranium</SubtypeId>
+					</Id>
+				</Item>
+				<Item AmountMin="2000" AmountMax="5000">
+					<Frequency>3.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Magnesium</SubtypeId>
+					</Id>
+				</Item>
+				<Item AmountMin="2000" AmountMax="5000">
+					<Frequency>5.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Coal</SubtypeId>
+					</Id>
+				</Item>
+				<Item AmountMin="2000" AmountMax="5000">
+					<Frequency>5.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>OilSand</SubtypeId>
+					</Id>
+				</Item>
+				<Item AmountMin="2000" AmountMax="5000">
+					<Frequency>3.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Lithium</SubtypeId>
+					</Id>
+				</Item>
+				<Item AmountMin="2000" AmountMax="5000">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Tantalum</SubtypeId>
+					</Id>
+				</Item>
+			</Items>
+		</ContainerType>
+
+		<ContainerType CountMin="2" CountMax="3">
+			<Id>
+				<TypeId>ContainerTypeDefinition</TypeId>
+				<SubtypeId>CustomParallax-ContainerTypes-OresLarge</SubtypeId>
+			</Id>
+			<Items>
+				<Item AmountMin="5000" AmountMax="10000">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Gold</SubtypeId>
+					</Id>
+				</Item>
+				<Item AmountMin="5000" AmountMax="10000">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Platinum</SubtypeId>
+					</Id>
+				</Item>
+				<Item AmountMin="5000" AmountMax="10000">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Uranium</SubtypeId>
+					</Id>
+				</Item>
+				<Item AmountMin="5000" AmountMax="10000">
+					<Frequency>3.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Magnesium</SubtypeId>
+					</Id>
+				</Item>
+				<Item AmountMin="5000" AmountMax="10000">
+					<Frequency>5.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Coal</SubtypeId>
+					</Id>
+				</Item>
+				<Item AmountMin="5000" AmountMax="10000">
+					<Frequency>5.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>OilSand</SubtypeId>
+					</Id>
+				</Item>
+				<Item AmountMin="5000" AmountMax="10000">
+					<Frequency>3.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Lithium</SubtypeId>
+					</Id>
+				</Item>
+				<Item AmountMin="5000" AmountMax="10000">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Tantalum</SubtypeId>
+					</Id>
+				</Item>
+			</Items>
+		</ContainerType>
+
+	</ContainerTypes>
+</Definitions>

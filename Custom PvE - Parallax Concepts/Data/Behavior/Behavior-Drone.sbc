@@ -1,0 +1,113 @@
+﻿<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Parallax-Behavior-Drone</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Behavior]
+
+        [BehaviorName:Patrol]
+
+        [AutopilotData:Parallax-AutoPilot-Drone-A]
+        [SecondaryAutopilotData:Parallax-AutoPilot-Drone-B]
+
+        [Triggers:Parallax-Trigger-UnStatic]
+        [Triggers:Parallax-Trigger-AggressionSwitchPatrol]
+        [Triggers:Parallax-Trigger-PassiveSwitchPatrol]
+
+        [TargetData:Parallax-Targeting-Drone]
+        [OverrideTargetData:Parallax-Targeting-Drone]
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Parallax-Targeting-Drone</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Target]
+
+        [UseCustomTargeting:true]
+        [Target:PlayerAndGrid]
+
+        [MaxDistance:2500]
+        [MaxExistingTargetDistance:3500]
+
+        [MatchAllFilters:OutsideOfSafezone]
+        [MatchAllFilters:Owner]
+        [MatchAllFilters:Relation]
+        [GetTargetBy:ClosestDistance]
+
+        [Owners:Player]
+        [Owners:NPC]
+        [Relations:Enemy]
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Parallax-AutoPilot-Drone-A</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Autopilot]
+
+        [DisableInertiaDampeners:false]
+        [SlowDownOnWaypointApproach:true]
+        [FlyLevelWithGravity:true]
+        [MinimumPlanetAltitude:200]
+        [IdealPlanetAltitude:300]
+        [WaypointTolerance:30]
+        [OffsetSpaceMinDistFromTarget:1000]
+        [OffsetSpaceMaxDistFromTarget:5000]
+        [OffsetPlanetMinDistFromTarget:1000]
+        [OffsetPlanetMaxDistFromTarget:5000]
+        [OffsetPlanetMinTargetAltitude:1000]
+        [OffsetPlanetMaxTargetAltitude:1400]
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Parallax-AutoPilot-Drone-B</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Autopilot]
+
+        [SlowDownOnWaypointApproach:true]
+        [ExtraSlowDownDistance:150]
+        [FlyLevelWithGravity:false]
+
+        [IdealMinSpeed:12]
+        [IdealMaxSpeed:100]
+        [MaxSpeedTolerance:3]
+
+        [MinimumPlanetAltitude:150]
+        [IdealPlanetAltitude:300]
+
+        [UseVelocityCollisionEvasion:false]
+        [LimitRotationSpeed:true]
+        [MaxRotationMagnitude:1.5]
+
+      </Description>
+
+    </EntityComponent>
+
+  </EntityComponents>
+</Definitions>

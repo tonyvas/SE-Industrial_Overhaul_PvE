@@ -1,0 +1,35 @@
+﻿<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Parallax-SpawnConditions-Boss</SubtypeId>
+      </Id>
+      <Description>
+
+        [MES Spawn Conditions]
+
+        [FactionOverride:PARALLAX]
+        [BossEncounterAny:true]
+        [BossCustomAnnounceEnable:true]
+        [BossCustomAnnounceAuthor:Parallax Commander]
+        [BossCustomAnnounceMessage:This area is off-limits. Failure to comply will result in a hostile response.]
+        [BossCustomGPSLabel:Dangerous Parallax Encounter]
+
+        [UseThreatLevelCheck:true]
+        [ThreatLevelCheckRange:15000]
+        [ThreatScoreMinimum:1500]
+
+        [RotateFirstCockpitToForward:true]
+
+      </Description>
+
+    </EntityComponent>
+
+
+  </EntityComponents>
+</Definitions>

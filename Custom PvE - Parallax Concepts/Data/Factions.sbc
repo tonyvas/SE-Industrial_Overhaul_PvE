@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Factions>
+
+    <Faction Tag="PARALLAX" Founder="The Chairman">
+      <Id>
+        <TypeId>MyObjectBuilder_FactionDefinition</TypeId>
+        <SubtypeId>ParallaxConcepts</SubtypeId>
+      </Id>
+      <DisplayName>Parallax Concepts</DisplayName>
+      <Description>Parallax Concepts is a mid-sized organization that is established on several planets and in outer space. While they do not have large ambitions to conquer and expand, they don't respond kindly to those that are not affiliated with their faction and will attack if provoked.</Description>
+      <IsDefault>true</IsDefault>
+      <DefaultRelation>Enemies</DefaultRelation>
+      <AcceptHumans>false</AcceptHumans>
+      <AutoAcceptMember>false</AutoAcceptMember>
+    </Faction>
+
+  </Factions>
+</Definitions>

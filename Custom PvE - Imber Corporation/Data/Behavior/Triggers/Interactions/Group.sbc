@@ -1,0 +1,43 @@
+﻿<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Imber-TriggerGroup-Interactions</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI TriggerGroup]
+
+        [Triggers:Imber-Trigger-Presence]
+        [Triggers:Imber-Trigger-InconPresence]
+        [Triggers:Imber-Trigger-InconResponse]
+        [Triggers:Imber-Trigger-ParallaxPresence]
+        [Triggers:Imber-Trigger-PravdaPresence]
+        [Triggers:Imber-Trigger-ReaverPresence]
+        [Triggers:Imber-Trigger-ReaverPresenceClear]
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Imber-TriggerGroup-StationInteractions</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI TriggerGroup]
+
+        [Triggers:Imber-Trigger-ReaverPresence]
+        [Triggers:Imber-Trigger-ReaverPresenceClear]
+
+      </Description>
+
+    </EntityComponent>
+    
+  </EntityComponents>
+</Definitions>

@@ -1,0 +1,72 @@
+﻿<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SpawnGroups>
+
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>Parallax-SpawnGroup-Blunderbuss</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+
+        [SpawnConditionsProfiles:Parallax-SpawnConditions-Boss]
+        [FactionOverride:PARALLAX]
+        [ReplenishSystems:true]
+        [UseFirstConditionsAsPersistent:true]
+        [ManipulationGroups:Parallax-Manipulation-Group]
+        [ManipulationProfiles:Parallax-Manipulation-Propulsion]
+        [MaxGravity:1.4]
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>1.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-PLX) Blunderbuss">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>Parallax-Behavior-Boss</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>Parallax-SpawnGroup-Thunderhelm</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+
+        [SpawnConditionsProfiles:Parallax-SpawnConditions-Boss]
+        [FactionOverride:PARALLAX]
+        [ReplenishSystems:true]
+        [UseFirstConditionsAsPersistent:true]
+        [ManipulationGroups:Parallax-Manipulation-Group]
+        [ManipulationProfiles:Parallax-Manipulation-Propulsion]
+        [MaxGravity:1.3]
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>1.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-PLX) Thunderhelm">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>Parallax-Behavior-Boss</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+  </SpawnGroups>
+</Definitions>

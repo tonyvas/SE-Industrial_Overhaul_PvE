@@ -1,0 +1,158 @@
+﻿<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Imber-Trigger-InconResponse</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Trigger]
+
+        [UseTrigger:true]
+        [Type:CommandReceived]
+        [CommandReceiveCode:Incon-Command-ImberResponse]
+
+        [Conditions:Imber-Condition-InconResponse]
+
+        [StartsReady:true]
+        [MaxActions:1]
+        [Actions:Imber-Action-InconResponseA]
+
+        [UseElseActions:true]
+        [ElseActions:Imber-Action-InconResponseB]
+
+      </Description>
+
+    </EntityComponent>
+    
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Imber-Condition-InconResponse</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Condition]
+
+        [CompareCommandGridValue:true]
+        [CompareCommandGridValueMode:Less]
+        
+      </Description>
+
+    </EntityComponent>
+
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Imber-Action-InconResponseA</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Action]
+
+        [UseChatBroadcast:true]
+        [ChatData:Imber-Chat-InconResponseA]
+
+        [SwitchToReceivedTarget:true]
+
+        [ChangeBehaviorSubclass:true]
+        [NewBehaviorSubclass:HorseFighter]
+
+        [ChangeAutopilotProfile:true]
+        [AutopilotProfile:Tertiary]
+
+        [EnableTriggers:true]
+        [EnableTriggerNames:Imber-Trigger-PassiveSwitchNoTarget]
+
+        [ResetCooldownTimeOfTriggers:true]
+        [ResetTriggerCooldownNames:Imber-Trigger-PassiveSwitchNoTarget]
+
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Imber-Chat-InconResponseA</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Chat]
+
+        [UseChat:true]
+        [StartsReady:true]
+        [MaxChats:1]
+        [BroadcastRandomly:true]
+        [Author:Imber Crew]
+        [Color:Red]
+
+        [ChatMessages: Adjusting heading to engage hostile Incon vessel...]
+        [ChatAudio:ArcHudGPSNotification1]
+        [BroadcastChatType:Chat]
+
+        [ChatMessages: We were hoping you'd give us an excuse to let the guns off the chain. It's been a while.]
+        [ChatAudio:ArcHudGPSNotification1]
+        [BroadcastChatType:Chat]
+        
+        [ChatMessages: Very well. We'll make your death as quick as possible.]
+        [ChatAudio:ArcHudGPSNotification1]
+        [BroadcastChatType:Chat]
+
+      </Description>
+    </EntityComponent>
+    
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Imber-Action-InconResponseB</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Action]
+
+        [UseChatBroadcast:true]
+        [ChatData:Imber-Chat-InconResponseB]
+
+      </Description>
+
+    </EntityComponent>
+    
+  <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Imber-Chat-InconResponseB</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Chat]
+
+        [UseChat:true]
+        [StartsReady:true]
+        [MaxChats:1]
+        [BroadcastRandomly:true]
+        [Author:Imber Crew]
+        [Color:Red]
+
+        [ChatMessages: It's your lucky day. Keep moving or else we'll change our minds.]
+        [ChatAudio:ArcHudGPSNotification1]
+        [BroadcastChatType:Chat]
+
+        [ChatMessages: You'd be more trouble than it's worth. It would be best if you kept moving.]
+        [ChatAudio:ArcHudGPSNotification1]
+        [BroadcastChatType:Chat]
+        
+        [ChatMessages: Get lost. If you stick around much longer, we'll call for a much bigger ship to deal with you.]
+        [ChatAudio:ArcHudGPSNotification1]
+        [BroadcastChatType:Chat]
+
+      </Description>
+    </EntityComponent>
+
+  </EntityComponents>
+</Definitions>

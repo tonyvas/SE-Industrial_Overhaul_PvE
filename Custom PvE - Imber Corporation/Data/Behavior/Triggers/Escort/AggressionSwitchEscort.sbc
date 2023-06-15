@@ -1,0 +1,90 @@
+﻿<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Imber-Trigger-AggressionSwitchEscort</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Trigger]
+
+        [UseTrigger:true]
+        [Type:TargetNear]
+
+        [TargetDistance:1500]
+
+        [StartsReady:true]
+        [MaxActions:-1]
+        [Actions:Imber-Action-AggressionSwitchEscort]
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Imber-Action-AggressionSwitchEscort</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Action]
+
+        [UseChatBroadcast:true]
+        [ChatData:Imber-Chat-AggressionSwitchEscort]
+
+        [ChangeBehaviorSubclass:true]
+        [NewBehaviorSubclass:Strike]
+
+        [ChangeAutopilotProfile:true]
+        [AutopilotProfile:Secondary]
+
+        [ChangeAutopilotSpeed:true]
+        [NewAutopilotSpeed:-1]
+
+        [DisableTriggers:true]
+        [DisableTriggerNames:Imber-Trigger-AggressionSwitchEscort]
+
+        [EnableTriggers:true]
+        [EnableTriggerNames:Imber-Trigger-PassiveSwitchEscort]
+        [EnableTriggerNames:MES-Trigger-NoTargetRetreatInitialCheck]
+
+        [ResetCooldownTimeOfTriggers:true]
+        [ResetTriggerCooldownNames:Imber-Trigger-PassiveSwitchEscort]
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Imber-Chat-AggressionSwitchEscort</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Chat]
+
+        [UseChat:true]
+        [StartsReady:true]
+        [MaxChats:1]
+        [BroadcastRandomly:true]
+        [Author:Imber Drone]
+        [Color:Red]
+
+        [ChatMessages: Hosile entity approaching. Strike mode activated.]
+        [ChatAudio:ArcHudGPSNotification1]
+        [BroadcastChatType:Chat]
+
+        [ChatMessages:Deviating from escort to intercept hostile entity.]
+        [ChatAudio:ArcHudGPSNotification1]
+        [BroadcastChatType:Chat]
+
+      </Description>
+    </EntityComponent>
+
+  </EntityComponents>
+</Definitions>

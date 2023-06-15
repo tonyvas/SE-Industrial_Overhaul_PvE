@@ -1,0 +1,541 @@
+﻿<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Imber-Manipulation-Group</SubtypeId>
+      </Id>
+      <Description>
+
+        [MES Manipulation Group]
+
+        [ManipulationProfiles:MES-Manipulation-RivalAi]
+        [ManipulationProfiles:MES-Manipulation-ResearchPoints]
+        [ManipulationProfiles:Imber-Manipulation-InhibitorA]
+        [ManipulationProfiles:Imber-Manipulation-InhibitorB]
+        [ManipulationProfiles:Imber-Manipulation-DroneThrustHigh]
+        [ManipulationProfiles:Imber-Manipulation-DroneEnergy]
+        [ManipulationProfiles:Imber-Manipulation-BasicLoot]
+        [ManipulationProfiles:Imber-Manipulation-MixedLoot]
+        [ManipulationProfiles:Imber-Manipulation-AdvancedLoot]
+        [ManipulationProfiles:Imber-Manipulation-LoreCeeDatapads]
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Imber-Manipulation-LoreCeeDatapads</SubtypeId>
+      </Id>
+      <Description>
+
+        [MES Manipulation]
+
+        [ManipulationRequiredCustomTags:Station]
+
+        [UseLootProfiles:true]
+        [ClearExistingContainerTypes:true]
+        [LootProfiles:Imber-Loot-DatapadsB]
+
+
+      </Description>
+
+    </EntityComponent>
+    
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Imber-Manipulation-BasicLoot</SubtypeId>
+      </Id>
+      <Description>
+
+        [MES Manipulation]
+
+        [ManipulationRequiredCustomTags:Easy]
+
+        [UseLootProfiles:true]
+        [ClearExistingContainerTypes:true]
+        [LootProfiles:Imber-Loot-Datapads]
+        [LootProfiles:MES-Loot-AntiInhibitor]
+        [LootProfiles:CustomImber-Loot-BasicContainers]
+        [LootProfiles:CustomImber-Loot-BasicContainersLarge]
+        [LootProfiles:MES-Loot-Corpses]
+        [LootProfiles:MES-Loot-Freight]
+        [LootProfiles:MES-Loot-Lockers]
+        [LootProfiles:MES-Loot-WeaponRacks]
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Imber-Manipulation-MixedLoot</SubtypeId>
+      </Id>
+      <Description>
+
+        [MES Manipulation]
+
+        [ManipulationRequiredCustomTags:Medium]
+
+        [UseLootProfiles:true]
+        [ClearExistingContainerTypes:true]
+        [LootProfiles:Imber-Loot-Datapads]
+        [LootProfiles:MES-Loot-AntiInhibitor]
+        [LootProfiles:CustomImber-Loot-MixedContainers]
+        [LootProfiles:CustomImber-Loot-MixedContainersLarge]
+        [LootProfiles:MES-Loot-Corpses]
+        [LootProfiles:MES-Loot-Freight]
+        [LootProfiles:MES-Loot-Lockers]
+        [LootProfiles:MES-Loot-WeaponRacks]
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Imber-Manipulation-AdvancedLoot</SubtypeId>
+      </Id>
+      <Description>
+
+        [MES Manipulation]
+
+        [ManipulationRequiredCustomTags:Hard]
+
+        [UseLootProfiles:true]
+        [ClearExistingContainerTypes:true]
+        [LootProfiles:Imber-Loot-Datapads]
+        [LootProfiles:CustomImber-Loot-AdvancedContainers]
+        [LootProfiles:CustomImber-Loot-AdvancedContainersLarge]
+        [LootProfiles:MES-Loot-AntiInhibitor]
+        [LootProfiles:MES-Loot-Corpses]
+        [LootProfiles:MES-Loot-Freight]
+        [LootProfiles:MES-Loot-Lockers]
+        [LootProfiles:MES-Loot-WeaponRacks]
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Imber-Manipulation-InhibitorA</SubtypeId>
+      </Id>
+      <Description>
+
+        [MES Manipulation]
+
+        [ManipulationAllowedPrefabIndexes:0]
+
+        [ReplaceArmorBlocksWithModules:true]
+        [ModulesForArmorReplacement:MyObjectBuilder_RadioAntenna/MES-Suppressor-Jetpack-Small]
+        [ModulesForArmorReplacement:MyObjectBuilder_RadioAntenna/MES-Suppressor-Jetpack-Large]
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Imber-Manipulation-InhibitorB</SubtypeId>
+      </Id>
+      <Description>
+
+        [MES Manipulation]
+
+        [ManipulationRequiredCustomTags:Station]
+        [ManipulationAllowedPrefabIndexes:0]
+
+        [ReplaceArmorBlocksWithModules:true]
+        [ModulesForArmorReplacement:MyObjectBuilder_RadioAntenna/MES-Suppressor-Drill-Large]
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Imber-Manipulation-Propulsion</SubtypeId>
+      </Id>
+      <Description>
+
+        [MES Manipulation]
+
+        [SetNpcGyroscopeMultiplier:true]
+        [NpcGyroscopeMultiplier:2.5]
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Imber-Manipulation-DroneThrust</SubtypeId>
+      </Id>
+      <Description>
+
+        [MES Manipulation]
+
+        [UseBlockReplacerProfile:true]
+        [IgnoreGlobalBlockReplacer:true]
+        [BlockReplacerProfileNames:MES-NpcThrusters-Hydro]
+
+        [ConfigureSpecialNpcThrusters:true]
+        [NpcHydroThrustPowerMultiply:0.0001]
+        [NpcHydroThrustForceMultiply:1]
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Imber-Manipulation-DroneThrustHigh</SubtypeId>
+      </Id>
+      <Description>
+
+        [MES Manipulation]
+
+        [ManipulationRestrictedPrefabIndexes:0]
+
+        [UseBlockReplacerProfile:true]
+        [IgnoreGlobalBlockReplacer:true]
+        [BlockReplacerProfileNames:MES-NpcThrusters-Hydro]
+
+        [ConfigureSpecialNpcThrusters:true]
+        [NpcHydroThrustPowerMultiply:0.0001]
+        [NpcHydroThrustForceMultiply:2]
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Imber-Manipulation-DroneEnergy</SubtypeId>
+      </Id>
+      <Description>
+
+        [MES Manipulation]
+
+        [ManipulationRestrictedPrefabIndexes:0]
+
+        [UseBlockReplacerProfile:true]
+        [IgnoreGlobalBlockReplacer:true]
+        [BlockReplacerProfileNames:MES-Energy-SmallBatteryToNpcBattery]
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Imber-Manipulation-RandomizationLimits</SubtypeId>
+      </Id>
+      <Description>
+
+        [MES Manipulation]
+
+        [ManipulationRestrictedPrefabIndexes:0]
+
+        [WeaponRandomizerTargetBlacklist:MyObjectBuilder_LargeGatlingTurret/SmallGatlingTurret]
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>CustomImber-Loot-BasicContainers</SubtypeId>
+      </Id>
+      <Description>
+
+        [MES Loot]
+
+        [ContainerBlockTypes:MyObjectBuilder_CargoContainer/SmallBlockMediumContainer]
+        [ContainerBlockTypes:MyObjectBuilder_CargoContainer/SmallBlockLargeContainer]
+        [ContainerBlockTypes:MyObjectBuilder_CargoContainer/LargeBlockSmallContainer]
+        [ContainerBlockTypes:MyObjectBuilder_CargoContainer/LargeBlockLargeContainer]
+        [ContainerBlockTypes:MyObjectBuilder_CargoContainer/LargeBlockLargeIndustrialContainer]
+
+        [ContainerTypes:CustomImber-ContainerTypes-OresSmall]
+
+        [MinBlocks:3]
+        [MaxBlocks:5]
+
+      </Description>
+
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>CustomImber-Loot-BasicContainersLarge</SubtypeId>
+      </Id>
+      <Description>
+
+        [MES Loot]
+
+        [ContainerBlockTypes:MyObjectBuilder_CargoContainer/LargeBlockLargeContainer]
+        [ContainerBlockTypes:MyObjectBuilder_CargoContainer/LargeBlockLargeIndustrialContainer]
+
+        [ContainerTypes:CustomImber-ContainerTypes-OresLarge]
+
+        [MinBlocks:1]
+        [MaxBlocks:2]
+
+      </Description>
+
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>CustomImber-Loot-MixedContainers</SubtypeId>
+      </Id>
+      <Description>
+
+        [MES Loot]
+
+        [ContainerBlockTypes:MyObjectBuilder_CargoContainer/SmallBlockMediumContainer]
+        [ContainerBlockTypes:MyObjectBuilder_CargoContainer/SmallBlockLargeContainer]
+        [ContainerBlockTypes:MyObjectBuilder_CargoContainer/LargeBlockSmallContainer]
+        [ContainerBlockTypes:MyObjectBuilder_CargoContainer/LargeBlockLargeContainer]
+        [ContainerBlockTypes:MyObjectBuilder_CargoContainer/LargeBlockLargeIndustrialContainer]
+		
+        [ContainerTypes:CustomImber-ContainerTypes-OresSmall]
+
+        [MinBlocks:2]
+        [MaxBlocks:5]
+
+      </Description>
+
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>CustomImber-Loot-MixedContainersLarge</SubtypeId>
+      </Id>
+      <Description>
+
+        [MES Loot]
+
+        [ContainerBlockTypes:MyObjectBuilder_CargoContainer/LargeBlockLargeContainer]
+        [ContainerBlockTypes:MyObjectBuilder_CargoContainer/LargeBlockLargeIndustrialContainer]
+
+        [ContainerTypes:CustomImber-ContainerTypes-OresLarge]
+
+        [MinBlocks:1]
+        [MaxBlocks:2]
+
+      </Description>
+
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>CustomImber-Loot-AdvancedContainers</SubtypeId>
+      </Id>
+      <Description>
+
+        [MES Loot]
+
+        [ContainerBlockTypes:MyObjectBuilder_CargoContainer/SmallBlockMediumContainer]
+        [ContainerBlockTypes:MyObjectBuilder_CargoContainer/SmallBlockLargeContainer]
+        [ContainerBlockTypes:MyObjectBuilder_CargoContainer/LargeBlockSmallContainer]
+
+        [ContainerTypes:CustomImber-ContainerTypes-OresSmall]
+
+        [MinBlocks:2]
+        [MaxBlocks:4]
+
+      </Description>
+
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>CustomImber-Loot-AdvancedContainersLarge</SubtypeId>
+      </Id>
+      <Description>
+
+        [MES Loot]
+
+        [ContainerBlockTypes:MyObjectBuilder_CargoContainer/LargeBlockLargeContainer]
+        [ContainerBlockTypes:MyObjectBuilder_CargoContainer/LargeBlockLargeIndustrialContainer]
+
+        [ContainerTypes:CustomImber-ContainerTypes-OresLarge]
+
+        [MinBlocks:1]
+        [MaxBlocks:2]
+
+      </Description>
+
+    </EntityComponent>
+
+  </EntityComponents>
+  
+  <ContainerTypes>
+	
+		<ContainerType CountMin="1" CountMax="3">
+			<Id>
+				<TypeId>ContainerTypeDefinition</TypeId>
+				<SubtypeId>CustomImber-ContainerTypes-OresSmall</SubtypeId>
+			</Id>
+			<Items>
+				<Item AmountMin="2000" AmountMax="5000">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Gold</SubtypeId>
+					</Id>
+				</Item>
+				<Item AmountMin="2000" AmountMax="5000">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Platinum</SubtypeId>
+					</Id>
+				</Item>
+				<Item AmountMin="2000" AmountMax="5000">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Uranium</SubtypeId>
+					</Id>
+				</Item>
+				<Item AmountMin="2000" AmountMax="5000">
+					<Frequency>3.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Magnesium</SubtypeId>
+					</Id>
+				</Item>
+				<Item AmountMin="2000" AmountMax="5000">
+					<Frequency>5.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Coal</SubtypeId>
+					</Id>
+				</Item>
+				<Item AmountMin="2000" AmountMax="5000">
+					<Frequency>5.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>OilSand</SubtypeId>
+					</Id>
+				</Item>
+				<Item AmountMin="2000" AmountMax="5000">
+					<Frequency>3.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Lithium</SubtypeId>
+					</Id>
+				</Item>
+				<Item AmountMin="2000" AmountMax="5000">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Tantalum</SubtypeId>
+					</Id>
+				</Item>
+			</Items>
+		</ContainerType>
+
+		<ContainerType CountMin="2" CountMax="3">
+			<Id>
+				<TypeId>ContainerTypeDefinition</TypeId>
+				<SubtypeId>CustomImber-ContainerTypes-OresLarge</SubtypeId>
+			</Id>
+			<Items>
+				<Item AmountMin="5000" AmountMax="10000">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Gold</SubtypeId>
+					</Id>
+				</Item>
+				<Item AmountMin="5000" AmountMax="10000">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Platinum</SubtypeId>
+					</Id>
+				</Item>
+				<Item AmountMin="5000" AmountMax="10000">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Uranium</SubtypeId>
+					</Id>
+				</Item>
+				<Item AmountMin="5000" AmountMax="10000">
+					<Frequency>3.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Magnesium</SubtypeId>
+					</Id>
+				</Item>
+				<Item AmountMin="5000" AmountMax="10000">
+					<Frequency>5.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Coal</SubtypeId>
+					</Id>
+				</Item>
+				<Item AmountMin="5000" AmountMax="10000">
+					<Frequency>5.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>OilSand</SubtypeId>
+					</Id>
+				</Item>
+				<Item AmountMin="5000" AmountMax="10000">
+					<Frequency>3.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Lithium</SubtypeId>
+					</Id>
+				</Item>
+				<Item AmountMin="5000" AmountMax="10000">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Tantalum</SubtypeId>
+					</Id>
+				</Item>
+			</Items>
+		</ContainerType>
+
+	</ContainerTypes>
+</Definitions>

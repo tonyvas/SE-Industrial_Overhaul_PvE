@@ -1,0 +1,98 @@
+﻿<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Parallax-Trigger-StationDamage</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Trigger]
+
+        [UseTrigger:true]
+        [Type:Damage]
+
+        [DamageTypes:Any]
+
+        [ExcludedDamageTypes:Environment]
+        [ExcludedDamageTypes:Deformation]
+        [ExcludedDamageTypes:Fire]
+
+        [MinCooldownMs:60000]
+        [MaxCooldownMs:60001]
+
+        [StartsReady:true]
+        [MaxActions:-1]
+        [Actions:Parallax-Action-StationDamage]
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Parallax-Action-StationDamage</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Action]
+
+        [UseChatBroadcast:true]
+        [ChatData:Parallax-Chat-StationDamage]
+
+        [BroadcastCommandProfiles:true]
+        [CommandProfileIds:Parallax-Command-StationDamage]
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Parallax-Chat-StationDamage</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Chat]
+
+        [UseChat:true]
+        [StartsReady:true]
+        [MaxChats:1]
+        [BroadcastRandomly:true]
+        [Author:Parallax Station Crew]
+        [Color:Red]
+
+        [ChatMessages:Requesting assistance from any passing assault ships, we're being attacked!]
+        [ChatAudio:ArcHudGPSNotification1]
+        [BroadcastChatType:Chat]
+
+        [ChatMessages:We're under attack! Any nearby vessels, please respond!]
+        [ChatAudio:ArcHudGPSNotification1]
+        [BroadcastChatType:Chat]
+
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Parallax-Command-StationDamage</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Command]
+
+        [CommandCode:ImberStationDamage]
+        [SingleRecipient:true]
+        [SendDamagerEntityId:true]
+
+      </Description>
+
+    </EntityComponent>
+
+  </EntityComponents>
+</Definitions>

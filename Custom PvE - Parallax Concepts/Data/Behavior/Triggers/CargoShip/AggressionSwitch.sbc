@@ -1,0 +1,106 @@
+﻿<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Parallax-Trigger-AggressionSwitch</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Trigger]
+
+        [UseTrigger:true]
+        [Type:PlayerNear]
+
+        [TargetDistance:1500]
+        [MaxPlayerReputation:-1450]
+
+        [Conditions:Parallax-Condition-AggressionSwitch]
+
+        [StartsReady:true]
+        [MaxActions:-1]
+        [Actions:Parallax-Action-AggressionSwitch]
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Parallax-Condition-AggressionSwitch</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Condition]
+
+        [UseConditions:true]
+
+        [CheckIfGridNameMatches:true]
+        [AllowPartialGridNameMatches:true]
+        [GridNamesToCheck:Frigate]
+        [GridNamesToCheck:Corvette]
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Parallax-Action-AggressionSwitch</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Action]
+
+        [UseChatBroadcast:true]
+        [ChatData:Parallax-Chat-AggressionSwitch]
+
+        [ChangeBehaviorSubclass:true]
+        [NewBehaviorSubclass:HorseFighter]
+
+        [ChangeAutopilotProfile:true]
+        [AutopilotProfile:Tertiary]
+
+        [DisableTriggers:true]
+        [DisableTriggerNames:Parallax-Trigger-AggressionSwitch]
+
+        [EnableTriggers:true]
+        [EnableTriggerNames:Parallax-Trigger-PassiveSwitch]
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Parallax-Chat-AggressionSwitch</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Chat]
+
+        [UseChat:true]
+        [StartsReady:true]
+        [MaxChats:1]
+        [BroadcastRandomly:true]
+        [Author:Parallax Crew]
+        [Color:Red]
+
+        [ChatMessages: Your constant hostility towards Imber will not be tolerated.]
+        [ChatAudio:ArcHudGPSNotification1]
+        [BroadcastChatType:Chat]
+
+        [ChatMessages:Known aggressors detected. Retaliatory strike authorized.]
+        [ChatAudio:ArcHudGPSNotification1]
+        [BroadcastChatType:Chat]
+
+      </Description>
+    </EntityComponent>
+
+  </EntityComponents>
+</Definitions>
