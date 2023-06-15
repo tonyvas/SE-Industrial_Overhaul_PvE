@@ -378,7 +378,7 @@
                 <TypeId>GasProperties</TypeId>
                 <SubtypeId>Hydrogen</SubtypeId>
             </StoredGasId>
-            <Capacity>1000</Capacity>
+            <Capacity>100</Capacity>
             <MinimalPricePerUnit>12656</MinimalPricePerUnit>
             <MinimumOfferAmount>1</MinimumOfferAmount>
             <MaximumOfferAmount>10</MaximumOfferAmount>
