@@ -11,7 +11,7 @@
       <MinedOreRatio>2</MinedOreRatio>
       <CanBeHarvested>true</CanBeHarvested>
       <IsRare>false</IsRare>
-      <SpawnsInAsteroids>false</SpawnsInAsteroids>
+      <SpawnsInAsteroids>true</SpawnsInAsteroids>
       <AsteroidGeneratorSpawnProbabilityMultiplier>5</AsteroidGeneratorSpawnProbabilityMultiplier>
 
       <MinVersion>1</MinVersion>
@@ -106,11 +106,11 @@
       <MinedOreRatio>4</MinedOreRatio>
       <CanBeHarvested>true</CanBeHarvested>
       <!-- Wether it spawns in asteroids, default true (even if undefined) -->
-      <SpawnsInAsteroids>true</SpawnsInAsteroids>
+      <SpawnsInAsteroids>false</SpawnsInAsteroids>
       <!-- True = generated in ore pockets and gets detected by ore detector, false = used as asteroids shell -->
       <IsRare>true</IsRare>
       <!-- Wether it can spawn from meteorite impacts, default true (even if undefined); NOTE: requires IsRare to be true. -->
-      <SpawnsFromMeteorites>true</SpawnsFromMeteorites>
+      <SpawnsFromMeteorites>false</SpawnsFromMeteorites>
       <AsteroidGeneratorSpawnProbabilityMultiplier>3</AsteroidGeneratorSpawnProbabilityMultiplier>
 	  
       <VoxelHandPreview>Textures\Voxels\Silicon_01_Thumbnail.dds</VoxelHandPreview>
@@ -210,11 +210,11 @@
       <MinedOreRatio>1</MinedOreRatio>
       <CanBeHarvested>true</CanBeHarvested>
       <!-- Wether it spawns in asteroids, default true (even if undefined) -->
-      <SpawnsInAsteroids>true</SpawnsInAsteroids>
+      <SpawnsInAsteroids>false</SpawnsInAsteroids>
       <!-- True = generated in ore pockets and gets detected by ore detector, false = used as asteroids shell -->
       <IsRare>true</IsRare>
       <!-- Wether it can spawn from meteorite impacts, default true (even if undefined); NOTE: requires IsRare to be true. -->
-      <SpawnsFromMeteorites>true</SpawnsFromMeteorites>
+      <SpawnsFromMeteorites>false</SpawnsFromMeteorites>
       <AsteroidGeneratorSpawnProbabilityMultiplier>3</AsteroidGeneratorSpawnProbabilityMultiplier>
 	  
       <VoxelHandPreview>Textures\Voxels\Snow_01_Thumbnail.dds</VoxelHandPreview>
@@ -315,11 +315,11 @@
       <MinedOreRatio>1</MinedOreRatio>
       <CanBeHarvested>true</CanBeHarvested>
       <!-- Wether it spawns in asteroids, default true (even if undefined) -->
-      <SpawnsInAsteroids>true</SpawnsInAsteroids>
+      <SpawnsInAsteroids>false</SpawnsInAsteroids>
       <!-- True = generated in ore pockets and gets detected by ore detector, false = used as asteroids shell -->
       <IsRare>true</IsRare>
       <!-- Wether it can spawn from meteorite impacts, default true (even if undefined); NOTE: requires IsRare to be true. -->
-      <SpawnsFromMeteorites>true</SpawnsFromMeteorites>
+      <SpawnsFromMeteorites>false</SpawnsFromMeteorites>
       <AsteroidGeneratorSpawnProbabilityMultiplier>1</AsteroidGeneratorSpawnProbabilityMultiplier>
 	  
       <VoxelHandPreview>Textures\Voxels\Silicon_01_Thumbnail.dds</VoxelHandPreview>
