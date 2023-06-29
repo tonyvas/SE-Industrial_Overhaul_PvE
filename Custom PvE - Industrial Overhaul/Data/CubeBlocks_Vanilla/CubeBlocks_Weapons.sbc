@@ -260,7 +260,7 @@
       <RotationSpeed>0.002</RotationSpeed>
       <ElevationSpeed>0.002 </ElevationSpeed>
       <IdleRotation>true</IdleRotation>
-      <MaxRangeMeters>1000</MaxRangeMeters>
+      <MaxRangeMeters>800</MaxRangeMeters>
       <MinFov>0.1</MinFov>
       <MaxFov>1.04719755</MaxFov>
       <EmissiveColorPreset>Default</EmissiveColorPreset>
@@ -352,7 +352,7 @@
       <RotationSpeed>0.001</RotationSpeed>
       <ElevationSpeed>0.001 </ElevationSpeed>
       <IdleRotation>true</IdleRotation>
-      <MaxRangeMeters>1000</MaxRangeMeters>
+      <MaxRangeMeters>800</MaxRangeMeters>
       <MinFov>0.1</MinFov>
       <MaxFov>1.04719755</MaxFov>
       <EmissiveColorPreset>Default</EmissiveColorPreset>
@@ -436,7 +436,7 @@
       <MinAzimuthDegrees>-180</MinAzimuthDegrees>
       <MaxAzimuthDegrees>180</MaxAzimuthDegrees>
       <IdleRotation>true</IdleRotation>
-      <MaxRangeMeters>1500</MaxRangeMeters>
+      <MaxRangeMeters>2000</MaxRangeMeters>
       <RotationSpeed>0.002</RotationSpeed>
       <ElevationSpeed>0.002 </ElevationSpeed>
       <EmissiveColorPreset>Default</EmissiveColorPreset>
@@ -528,7 +528,7 @@
       <MinAzimuthDegrees>-180</MinAzimuthDegrees>
       <MaxAzimuthDegrees>180</MaxAzimuthDegrees>
       <IdleRotation>true</IdleRotation>
-      <MaxRangeMeters>1500</MaxRangeMeters>
+      <MaxRangeMeters>2000</MaxRangeMeters>
       <RotationSpeed>0.002</RotationSpeed>
       <ElevationSpeed>0.002 </ElevationSpeed>
       <EmissiveColorPreset>Default</EmissiveColorPreset>
