@@ -1,0 +1,386 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <CubeBlocks>
+
+    <Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
+      <Id>
+        <TypeId>LargeGatlingTurret</TypeId>
+        <SubtypeId>CLGGTurret</SubtypeId>
+      </Id>
+      <DisplayName>CLG Autocannon Turret</DisplayName>
+	  <Description>Combusion Light-Gas Gun; uses combustion of compressed hydrogen to fire projectiles.</Description>
+      <Icon>Icons\CLGG.dds</Icon>
+      <CubeSize>Large</CubeSize>
+      <PlaceDecals>false</PlaceDecals>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <Model>Models\CLGGBase.mwm</Model>
+      <UseModelIntersection>true</UseModelIntersection>
+      <Components>
+        <Component Subtype="SteelPlate" Count="25" />
+        <Component Subtype="Construction" Count="20" />
+        <Component Subtype="SmallTube" Count="20" />
+        <Component Subtype="LargeTube" Count="15" />
+        <Component Subtype="CopperWire" Count="20" />
+        <Component Subtype="Motor" Count="5" />
+        <Component Subtype="Computer" Count="10" />
+        <Component Subtype="SteelPlate" Count="30" />
+      </Components>
+      <CriticalComponent Subtype="Computer" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="1" EndY="1" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.33" File="Models\Construct\CLGGTurretConstruct1.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="Models\Construct\CLGGTurretConstruct2.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Construct\CLGGTurretConstruct3.mwm" />
+      </BuildProgressModels>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>50</BuildTimeSeconds>
+      <OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture>
+      <WeaponDefinitionId Subtype="CLGG" />
+      <InventoryMaxVolume>0.1</InventoryMaxVolume>
+      <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <ResourceSinkGroup>Defense</ResourceSinkGroup>
+      <MinElevationDegrees>-10</MinElevationDegrees>
+      <MaxElevationDegrees>50</MaxElevationDegrees>
+      <MinAzimuthDegrees>-180</MinAzimuthDegrees>
+      <MaxAzimuthDegrees>180</MaxAzimuthDegrees>
+      <IdleRotation>false</IdleRotation>
+      <MaxRangeMeters>1000</MaxRangeMeters>
+      <RotationSpeed>0.0015</RotationSpeed>
+      <ElevationSpeed>0.0015</ElevationSpeed>
+      <EmissiveColorPreset>Default</EmissiveColorPreset>
+      <MinFov>0.1</MinFov>
+      <MaxFov>1.04719755</MaxFov>
+      <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+      <DestroySound>WepSmallWarheadExpl</DestroySound>
+      <IsAirTight>false</IsAirTight>
+      <UpCameraOffset>0.4</UpCameraOffset>
+      <ForwardCameraOffset>0.5</ForwardCameraOffset>
+    </Definition>
+
+    <Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
+      <Id>
+        <TypeId>LargeMissileTurret</TypeId>
+        <SubtypeId>CoilgunTurret</SubtypeId>
+      </Id>
+      <DisplayName>Coilgun Turret</DisplayName>
+      <Icon>Icons\CoilgunTurret.dds</Icon>
+      <CubeSize>Large</CubeSize>
+      <PlaceDecals>false</PlaceDecals>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="5" y="2" z="5" />
+      <Center x="2" y="0" z="2" />
+      <Model>Models\CoilgunTurretBase.mwm</Model>
+      <UseModelIntersection>true</UseModelIntersection>
+      <Components>
+        <Component Subtype="SteelPlate" Count="80" />
+        <Component Subtype="Construction" Count="100" />
+        <Component Subtype="CopperWire" Count="75" />
+        <Component Subtype="MetalGrid" Count="25" />
+        <Component Subtype="LargeTube" Count="30" />
+        <Component Subtype="Motor" Count="25" />
+        <Component Subtype="Capacitor" Count="50" />
+        <Component Subtype="Superconductor" Count="25" />
+        <Component Subtype="SuperMagnet" Count="15" />
+        <Component Subtype="Detector" Count="15" />
+		<Component Subtype="Computer" Count="10" />
+        <Component Subtype="AdvancedComputer" Count="50" />
+        <Component Subtype="ArmoredPlate" Count="50" />
+      </Components>
+      <CriticalComponent Subtype="AdvancedComputer" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="5" EndY="5" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.25" File="Models\Construct\CoilgunTurretConstruct0.mwm" />
+        <Model BuildPercentUpperBound="0.5" File="Models\Construct\CoilgunTurretConstruct1.mwm" />
+        <Model BuildPercentUpperBound="0.75" File="Models\Construct\CoilgunTurretConstruct2.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Construct\CoilgunTurretConstruct3.mwm" />
+      </BuildProgressModels>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>50</BuildTimeSeconds>
+      <OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture>
+      <WeaponDefinitionId Subtype="FixedCoilgun" />
+      <InventoryMaxVolume>0.1</InventoryMaxVolume>
+      <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <ResourceSinkGroup>Defense</ResourceSinkGroup>
+      <MinElevationDegrees>-3</MinElevationDegrees>
+      <MaxElevationDegrees>55</MaxElevationDegrees>
+      <MinAzimuthDegrees>-180</MinAzimuthDegrees>
+      <MaxAzimuthDegrees>180</MaxAzimuthDegrees>
+      <IdleRotation>false</IdleRotation>
+      <MaxRangeMeters>10000</MaxRangeMeters>
+      <RotationSpeed>0.00005</RotationSpeed>
+      <ElevationSpeed>0.00005</ElevationSpeed>
+      <EmissiveColorPreset>Default</EmissiveColorPreset>
+      <MinFov>0.1</MinFov>
+      <MaxFov>1.04719755</MaxFov>
+      <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+      <DestroySound>WepSmallWarheadExpl</DestroySound>
+      <IsAirTight>false</IsAirTight>
+      <UpCameraOffset>1</UpCameraOffset>
+      <ForwardCameraOffset>1</ForwardCameraOffset>
+      <StandbyPowerConsumption>0.001</StandbyPowerConsumption>
+      <OperationalPowerConsumption>8</OperationalPowerConsumption>
+    </Definition>
+
+    <Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
+      <Id>
+        <TypeId>LargeMissileTurret</TypeId>
+        <SubtypeId>305mmDoubleTurret</SubtypeId>
+      </Id>
+      <DisplayName>305mm Twin Turret</DisplayName>
+      <Icon>Icons\305mmDoubleTurret.dds</Icon>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="3" y="2" z="3" />
+      <Center x="1" y="0" z="1" />
+      <Model>Models\305mmDoubleTurretBase.mwm</Model>
+      <UseModelIntersection>true</UseModelIntersection>
+      <Components>
+        <Component Subtype="SteelPlate" Count="75" />
+        <Component Subtype="Construction" Count="75" />
+        <Component Subtype="CopperWire" Count="50" />
+        <Component Subtype="MetalGrid" Count="25" />
+        <Component Subtype="LargeTube" Count="65" />
+        <Component Subtype="Motor" Count="50" />
+        <Component Subtype="Detector" Count="10" />
+		<Component Subtype="Computer" Count="10" />
+        <Component Subtype="AdvancedComputer" Count="45" />
+        <Component Subtype="ArmoredPlate" Count="75" />
+      </Components>
+      <CriticalComponent Subtype="AdvancedComputer" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="3" EndY="3" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.33" File="Models\Construct\305mmDoubleTurretConstruct1.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="Models\Construct\305mmDoubleTurretConstruct2.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Construct\305mmDoubleTurretConstruct3.mwm" />
+      </BuildProgressModels>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>40</BuildTimeSeconds>
+      <OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture>
+      <WeaponDefinitionId Subtype="305mmDoubleCannon" />
+      <InventoryMaxVolume>0.1</InventoryMaxVolume>
+      <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <ResourceSinkGroup>Defense</ResourceSinkGroup>
+      <MinElevationDegrees>-7</MinElevationDegrees>
+      <MaxElevationDegrees>65</MaxElevationDegrees>
+      <MinAzimuthDegrees>-180</MinAzimuthDegrees>
+      <MaxAzimuthDegrees>180</MaxAzimuthDegrees>
+      <IdleRotation>false</IdleRotation>
+      <MaxRangeMeters>3500</MaxRangeMeters>
+      <RotationSpeed>0.00015</RotationSpeed>
+      <ElevationSpeed>0.00015</ElevationSpeed>
+      <EmissiveColorPreset>Default</EmissiveColorPreset>
+      <MinFov>0.1</MinFov>
+      <MaxFov>1.04719755</MaxFov>
+      <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+      <DestroySound>WepSmallWarheadExpl</DestroySound>
+      <IsAirTight>false</IsAirTight>
+      <ForwardCameraOffset>2</ForwardCameraOffset>
+    </Definition>
+
+    <Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
+      <Id>
+        <TypeId>LargeMissileTurret</TypeId>
+        <SubtypeId>305mmSingleTurret</SubtypeId>
+      </Id>
+      <DisplayName>305mm Turret</DisplayName>
+      <Icon>Icons\305mmSingleTurret.dds</Icon>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="3" y="1" z="3" />
+      <Center x="1" y="0" z="1" />
+      <Model>Models\305mmSingleTurretBase.mwm</Model>
+      <UseModelIntersection>true</UseModelIntersection>
+      <Components>
+        <Component Subtype="SteelPlate" Count="60" />
+        <Component Subtype="Construction" Count="75" />
+        <Component Subtype="CopperWire" Count="45" />
+        <Component Subtype="MetalGrid" Count="25" />
+        <Component Subtype="LargeTube" Count="30" />
+        <Component Subtype="Motor" Count="25" />
+        <Component Subtype="Detector" Count="5" />
+		<Component Subtype="Computer" Count="10" />
+        <Component Subtype="AdvancedComputer" Count="25" />
+        <Component Subtype="ArmoredPlate" Count="40" />
+      </Components>
+      <CriticalComponent Subtype="AdvancedComputer" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Bottom" StartX="0.5" StartY="0.5" EndX="2.5" EndY="2.5" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.33" File="Models\Construct\305mmSingleTurretConstruct1.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="Models\Construct\305mmSingleTurretConstruct2.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Construct\305mmSingleTurretConstruct3.mwm" />
+      </BuildProgressModels>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>30</BuildTimeSeconds>
+      <OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture>
+      <WeaponDefinitionId Subtype="305mmFixedCannon" />
+      <InventoryMaxVolume>0.1</InventoryMaxVolume>
+      <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <ResourceSinkGroup>Defense</ResourceSinkGroup>
+      <MinElevationDegrees>-7</MinElevationDegrees>
+      <MaxElevationDegrees>65</MaxElevationDegrees>
+      <MinAzimuthDegrees>-180</MinAzimuthDegrees>
+      <MaxAzimuthDegrees>180</MaxAzimuthDegrees>
+      <IdleRotation>false</IdleRotation>
+      <MaxRangeMeters>3500</MaxRangeMeters>
+      <RotationSpeed>0.00015</RotationSpeed>
+      <ElevationSpeed>0.00015</ElevationSpeed>
+      <EmissiveColorPreset>Default</EmissiveColorPreset>
+      <MinFov>0.1</MinFov>
+      <MaxFov>1.04719755</MaxFov>
+      <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+      <DestroySound>WepSmallWarheadExpl</DestroySound>
+      <IsAirTight>false</IsAirTight>
+      <UpCameraOffset>0.5</UpCameraOffset>
+      <ForwardCameraOffset>1</ForwardCameraOffset>
+    </Definition>
+
+    <Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
+      <Id>
+        <TypeId>LargeMissileTurret</TypeId>
+        <SubtypeId>155mmSingleTurret</SubtypeId>
+      </Id>
+      <DisplayName>155mm Turret</DisplayName>
+      <Icon>Icons\155mmSingleTurret.dds</Icon>
+      <CubeSize>Small</CubeSize>
+	  <BlockPairName>155mmTurret</BlockPairName>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="3" y="3" z="3" />
+      <Center x="1" y="0" z="1" />
+      <Model>Models\155mmSingleTurretBase.mwm</Model>
+      <UseModelIntersection>true</UseModelIntersection>
+      <Components>
+        <Component Subtype="SteelPlate" Count="20" />
+        <Component Subtype="Construction" Count="30" />
+        <Component Subtype="CopperWire" Count="25" />
+        <Component Subtype="MetalGrid" Count="15" />
+        <Component Subtype="LargeTube" Count="12" />
+        <Component Subtype="Motor" Count="10" />
+        <Component Subtype="Detector" Count="5" />
+		<Component Subtype="Computer" Count="10" />
+        <Component Subtype="AdvancedComputer" Count="15" />
+        <Component Subtype="ArmoredPlate" Count="20" />
+      </Components>
+      <CriticalComponent Subtype="AdvancedComputer" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="3" EndY="3" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.33" File="Models\Construct\155mmSingleTurretConstruct1.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="Models\Construct\155mmSingleTurretConstruct2.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Construct\155mmSingleTurretConstruct3.mwm" />
+      </BuildProgressModels>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>20</BuildTimeSeconds>
+      <OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture>
+      <WeaponDefinitionId Subtype="155mmFixedCannon" />
+      <InventoryMaxVolume>0.1</InventoryMaxVolume>
+      <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <ResourceSinkGroup>Defense</ResourceSinkGroup>
+      <MinElevationDegrees>-10</MinElevationDegrees>
+      <MaxElevationDegrees>70</MaxElevationDegrees>
+      <MinAzimuthDegrees>-180</MinAzimuthDegrees>
+      <MaxAzimuthDegrees>180</MaxAzimuthDegrees>
+      <IdleRotation>false</IdleRotation>
+      <MaxRangeMeters>2000</MaxRangeMeters>
+      <RotationSpeed>0.0005</RotationSpeed>
+      <ElevationSpeed>0.0005</ElevationSpeed>
+      <EmissiveColorPreset>Default</EmissiveColorPreset>
+      <MinFov>0.1</MinFov>
+      <MaxFov>1.04719755</MaxFov>
+      <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+      <DestroySound>WepSmallWarheadExpl</DestroySound>
+      <IsAirTight>false</IsAirTight>
+      <UpCameraOffset>0.25</UpCameraOffset>
+      <ForwardCameraOffset>1</ForwardCameraOffset>
+    </Definition>
+
+    <Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
+      <Id>
+        <TypeId>LargeMissileTurret</TypeId>
+        <SubtypeId>155mmSingleTurretLarge</SubtypeId>
+      </Id>
+      <DisplayName>155mm Turret</DisplayName>
+      <Icon>Icons\155mmSingleTurret.dds</Icon>
+      <CubeSize>Large</CubeSize>
+	  <BlockPairName>155mmTurret</BlockPairName>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\155mmSingleTurretLargeBase.mwm</Model>
+      <UseModelIntersection>true</UseModelIntersection>
+      <Components>
+        <Component Subtype="SteelPlate" Count="35" />
+        <Component Subtype="Construction" Count="30" />
+        <Component Subtype="CopperWire" Count="25" />
+        <Component Subtype="MetalGrid" Count="15" />
+        <Component Subtype="LargeTube" Count="12" />
+        <Component Subtype="Motor" Count="10" />
+        <Component Subtype="Detector" Count="5" />
+		<Component Subtype="Computer" Count="10" />
+        <Component Subtype="AdvancedComputer" Count="15" />
+        <Component Subtype="ArmoredPlate" Count="20" />
+      </Components>
+      <CriticalComponent Subtype="AdvancedComputer" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="1" EndY="1" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.33" File="Models\Construct\155mmSingleTurretLargeConstruct1.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="Models\Construct\155mmSingleTurretLargeConstruct2.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Construct\155mmSingleTurretLargeConstruct3.mwm" />
+      </BuildProgressModels>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>20</BuildTimeSeconds>
+      <OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture>
+      <WeaponDefinitionId Subtype="155mmFixedCannon" />
+      <InventoryMaxVolume>0.1</InventoryMaxVolume>
+      <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <ResourceSinkGroup>Defense</ResourceSinkGroup>
+      <MinElevationDegrees>-10</MinElevationDegrees>
+      <MaxElevationDegrees>70</MaxElevationDegrees>
+      <MinAzimuthDegrees>-180</MinAzimuthDegrees>
+      <MaxAzimuthDegrees>180</MaxAzimuthDegrees>
+      <IdleRotation>false</IdleRotation>
+      <MaxRangeMeters>2000</MaxRangeMeters>
+      <RotationSpeed>0.0005</RotationSpeed>
+      <ElevationSpeed>0.0005</ElevationSpeed>
+      <EmissiveColorPreset>Default</EmissiveColorPreset>
+      <MinFov>0.1</MinFov>
+      <MaxFov>1.04719755</MaxFov>
+      <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+      <DestroySound>WepSmallWarheadExpl</DestroySound>
+      <IsAirTight>false</IsAirTight>
+      <UpCameraOffset>0.25</UpCameraOffset>
+      <ForwardCameraOffset>1</ForwardCameraOffset>
+    </Definition>
+	
+   </CubeBlocks>
+	
+</Definitions>

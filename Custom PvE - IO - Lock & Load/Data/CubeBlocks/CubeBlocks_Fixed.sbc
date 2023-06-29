@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <CubeBlocks>
+    <Definition xsi:type="MyObjectBuilder_WeaponBlockDefinition">
+      <Id>
+        <TypeId>SmallMissileLauncher</TypeId>
+        <SubtypeId>155mmFixedCannon</SubtypeId>
+      </Id>
+      <DisplayName>155mm Fixed Cannon</DisplayName>
+      <Icon>Icons\155mmCannon.dds</Icon>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="9" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\155mmFixedCannon.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="15" />
+        <Component Subtype="Construction" Count="20" />
+        <Component Subtype="CopperWire" Count="10" />
+        <Component Subtype="MetalGrid" Count="5" />
+        <Component Subtype="LargeTube" Count="10" />
+        <Component Subtype="Motor" Count="2" />
+		<Component Subtype="Computer" Count="10" />
+        <Component Subtype="ArmoredPlate" Count="5" />
+      </Components>
+      <CriticalComponent Subtype="Computer" Index="0" />
+      <Center x="0" y="0" z="8" />
+      <MountPoints>
+        <MountPoint Side="Back" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Top" StartX="0" StartY="1.9" EndX="1" EndY="2" />
+        <MountPoint Side="Top" StartX="0" StartY="0" EndX="1" EndY="0.1" />
+        <MountPoint Side="Right" StartX="1.9" StartY="0" EndX="2" EndY="1" />
+        <MountPoint Side="Right" StartX="0" StartY="0" EndX="0.1" EndY="1" />
+        <MountPoint Side="Left" StartX="8.9" StartY="0" EndX="9" EndY="1" />
+        <MountPoint Side="Left" StartX="7" StartY="0" EndX="7.1" EndY="1" />
+        <MountPoint Side="Bottom" StartX="0" StartY="8.9" EndX="1" EndY="9" />
+        <MountPoint Side="Bottom" StartX="0" StartY="7" EndX="1" EndY="7.1" />
+      </MountPoints>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <BuildTimeSeconds>15</BuildTimeSeconds>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.33" File="Models\Construct\155mmFixedCannonConstruct1.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="Models\Construct\155mmFixedCannonConstruct2.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Construct\155mmFixedCannonConstruct3.mwm" />
+      </BuildProgressModels>
+      <WeaponDefinitionId Subtype="155mmFixedCannon"/>
+      <InventoryMaxVolume>0.1</InventoryMaxVolume>
+      <DamageEffectId>213</DamageEffectId>
+    </Definition>
+	
+    <Definition xsi:type="MyObjectBuilder_WeaponBlockDefinition">
+      <Id>
+        <TypeId>SmallMissileLauncher</TypeId>
+        <SubtypeId>305mmFixedCannon</SubtypeId>
+      </Id>
+      <DisplayName>305mm Fixed Cannon</DisplayName>
+      <Icon>Icons\305mmCannon.dds</Icon>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="3" y="3" z="20" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\305mmFixedCannon.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="30" />
+        <Component Subtype="Construction" Count="45" />
+        <Component Subtype="CopperWire" Count="25" />
+        <Component Subtype="MetalGrid" Count="15" />
+        <Component Subtype="LargeTube" Count="30" />
+        <Component Subtype="Motor" Count="5" />
+		<Component Subtype="Computer" Count="10" />
+        <Component Subtype="ArmoredPlate" Count="15" />
+      </Components>
+      <CriticalComponent Subtype="Computer" Index="0" />
+      <Center x="1" y="1" z="19" />
+      <MountPoints>
+        <MountPoint Side="Back" StartX="0" StartY="0" EndX="3" EndY="3" />
+        <MountPoint Side="Top" StartX="0" StartY="6.5" EndX="3" EndY="7" />
+        <MountPoint Side="Top" StartX="0" StartY="0" EndX="3" EndY="0.5" />
+        <MountPoint Side="Right" StartX="6.5" StartY="0" EndX="7" EndY="3" />
+        <MountPoint Side="Right" StartX="0" StartY="0" EndX="0.5" EndY="3" />
+        <MountPoint Side="Left" StartX="19.5" StartY="0" EndX="20" EndY="3" />
+        <MountPoint Side="Left" StartX="13" StartY="0" EndX="13.5" EndY="3" />
+        <MountPoint Side="Bottom" StartX="0" StartY="19.5" EndX="3" EndY="20" />
+        <MountPoint Side="Bottom" StartX="0" StartY="13" EndX="3" EndY="13.5" />
+      </MountPoints>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <BuildTimeSeconds>15</BuildTimeSeconds>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.33" File="Models\Construct\305mmFixedCannonConstruct1.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="Models\Construct\305mmFixedCannonConstruct2.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Construct\305mmFixedCannonConstruct3.mwm" />
+      </BuildProgressModels>
+      <WeaponDefinitionId Subtype="305mmFixedCannon"/>
+      <InventoryMaxVolume>0.1</InventoryMaxVolume>
+      <DamageEffectId>213</DamageEffectId>
+    </Definition>
+	
+    <Definition xsi:type="MyObjectBuilder_WeaponBlockDefinition">
+      <Id>
+        <TypeId>SmallMissileLauncher</TypeId>
+        <SubtypeId>HeavyFixedLaser</SubtypeId>
+      </Id>
+      <DisplayName>Heavy Fixed Laser</DisplayName>
+      <Icon>Icons\HeavyFixedLaser.dds</Icon>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="4" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\HeavyLaserFixed.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="30" />
+        <Component Subtype="CopperWire" Count="30"/>
+        <Component Subtype="Construction" Count="40" />
+        <Component Subtype="MetalGrid" Count="20" />
+        <Component Subtype="Superconductor" Count="20" />
+        <Component Subtype="LargeTube" Count="10" />
+        <Component Subtype="LaserEmitter" Count="50" />
+        <Component Subtype="Computer" Count="10" />
+        <Component Subtype="AdvancedComputer" Count="30" />
+        <Component Subtype="ArmoredPlate" Count="20" />
+      </Components>
+      <CriticalComponent Subtype="AdvancedComputer" Index="0" />
+      <Center x="0" y="0" z="3" />
+      <MountPoints>
+        <MountPoint Side="Back" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Top" StartX="0.4" StartY="0" EndX="0.6" EndY="1" />
+        <MountPoint Side="Right" StartX="0" StartY="0.4" EndX="1" EndY="0.6" />
+        <MountPoint Side="Left" StartX="3" StartY="0.4" EndX="4" EndY="0.6" />
+        <MountPoint Side="Bottom" StartX="0.4" StartY="3" EndX="0.6" EndY="4" />
+      </MountPoints>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <BuildTimeSeconds>15</BuildTimeSeconds>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.33" File="Models\Construct\HeavyLaserFixedConstruct1.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="Models\Construct\HeavyLaserFixedConstruct2.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Construct\HeavyLaserFixedConstruct3.mwm" />
+      </BuildProgressModels>
+      <WeaponDefinitionId Subtype="PDLaser"/>
+      <InventoryMaxVolume>0.1</InventoryMaxVolume>
+      <DamageEffectId>213</DamageEffectId>
+    </Definition>
+	
+    <Definition xsi:type="MyObjectBuilder_WeaponBlockDefinition">
+      <Id>
+        <TypeId>SmallMissileLauncher</TypeId>
+        <SubtypeId>LightFixedLaser</SubtypeId>
+      </Id>
+      <DisplayName>Light Fixed Laser</DisplayName>
+      <Icon>Icons\LightFixedLaser.dds</Icon>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="7" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\LightLaserFixed.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="15" />
+        <Component Subtype="CopperWire" Count="20"/>
+        <Component Subtype="Construction" Count="30" />
+        <Component Subtype="MetalGrid" Count="10" />
+        <Component Subtype="Superconductor" Count="20" />
+        <Component Subtype="LargeTube" Count="10" />
+        <Component Subtype="LaserEmitter" Count="25" />
+        <Component Subtype="Computer" Count="10" />
+        <Component Subtype="AdvancedComputer" Count="10" />
+        <Component Subtype="ArmoredPlate" Count="10" />
+      </Components>
+      <CriticalComponent Subtype="AdvancedComputer" Index="0" />
+      <Center x="0" y="0" z="6" />
+      <MountPoints>
+        <MountPoint Side="Back" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Top" StartX="0" StartY="0" EndX="1" EndY="1.5" />
+        <MountPoint Side="Right" StartX="0" StartY="0" EndX="3.9" EndY="1" />
+        <MountPoint Side="Left" StartX="3.1" StartY="0" EndX="7" EndY="1" />
+        <MountPoint Side="Bottom" StartX="0" StartY="5" EndX="1" EndY="7" />
+      </MountPoints>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <BuildTimeSeconds>15</BuildTimeSeconds>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.33" File="Models\Construct\LightLaserFixedConstruct1.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="Models\Construct\LightLaserFixedConstruct2.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Construct\LightLaserFixedConstruct3.mwm" />
+      </BuildProgressModels>
+      <WeaponDefinitionId Subtype="PDLaser"/>
+      <InventoryMaxVolume>0.1</InventoryMaxVolume>
+      <DamageEffectId>213</DamageEffectId>
+    </Definition>
+	
+    <Definition xsi:type="MyObjectBuilder_WeaponBlockDefinition">
+      <Id>
+        <TypeId>SmallMissileLauncher</TypeId>
+        <SubtypeId>FixedCoilgun</SubtypeId>
+      </Id>
+      <DisplayName>Fixed Coilgun</DisplayName>
+      <Icon>Icons\FixedCoilgun.dds</Icon>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="7" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\CoilgunFixed.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="50" />
+        <Component Subtype="Construction" Count="60" />
+        <Component Subtype="CopperWire" Count="70" />
+        <Component Subtype="MetalGrid" Count="25" />
+        <Component Subtype="LargeTube" Count="30" />
+        <Component Subtype="Motor" Count="5" />
+        <Component Subtype="Capacitor" Count="40" />
+        <Component Subtype="Superconductor" Count="20" />
+        <Component Subtype="SuperMagnet" Count="15" />
+		<Component Subtype="Computer" Count="10" />
+        <Component Subtype="AdvancedComputer" Count="20" />
+        <Component Subtype="ArmoredPlate" Count="25" />
+      </Components>
+      <CriticalComponent Subtype="AdvancedComputer" Index="0" />
+      <Center x="0" y="0" z="6" />
+      <MountPoints>
+        <MountPoint Side="Back" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Top" StartX="0.4" StartY="0" EndX="0.6" EndY="1" />
+        <MountPoint Side="Right" StartX="0" StartY="0.4" EndX="1" EndY="0.6" />
+        <MountPoint Side="Left" StartX="6" StartY="0.4" EndX="7" EndY="0.6" />
+        <MountPoint Side="Bottom" StartX="0.4" StartY="6" EndX="0.6" EndY="7" />
+      </MountPoints>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <BuildTimeSeconds>15</BuildTimeSeconds>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.33" File="Models\Construct\CoilgunFixedConstruct1.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="Models\Construct\CoilgunFixedConstruct2.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Construct\CoilgunFixedConstruct3.mwm" />
+      </BuildProgressModels>
+      <WeaponDefinitionId Subtype="FixedCoilgun"/>
+            <ResourceSinkGroup>DefenseAdative</ResourceSinkGroup>
+      <InventoryMaxVolume>0.1</InventoryMaxVolume>
+      <DamageEffectId>213</DamageEffectId>
+    </Definition>
+	
+   </CubeBlocks>
+	
+</Definitions>

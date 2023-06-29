@@ -1,0 +1,107 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Weapons>
+
+    <Weapon>
+      <Id>
+        <TypeId>WeaponDefinition</TypeId>
+        <SubtypeId>CLGG</SubtypeId>
+      </Id>
+      <ProjectileAmmoData RateOfFire="200" ShootSoundName="CLGGFire" />
+      <NoAmmoSoundName>WepPlayRifleNoAmmo</NoAmmoSoundName>
+      <DeviateShotAngle>0.1</DeviateShotAngle>
+      <ReleaseTimeAfterFire>100</ReleaseTimeAfterFire>
+      <MuzzleFlashLifeSpan>0</MuzzleFlashLifeSpan>
+      <UseDefaultMuzzleFlash>false</UseDefaultMuzzleFlash>			
+			<Effects>
+                <Effect Action="Shoot" Dummy="muzzle_projectile" Particle="Muzzle_Flash_Autocannon" Loop="true" InstantStop="false" OffsetZ="-3.5"/>
+            </Effects>
+      <AmmoMagazines>
+        <AmmoMagazine Subtype="CLGG" />
+      </AmmoMagazines>
+    </Weapon>
+
+        <Weapon>
+            <Id>
+                <TypeId>WeaponDefinition</TypeId>
+                <SubtypeId>155mmFixedCannon</SubtypeId>
+            </Id>
+            <MissileAmmoData RateOfFire="100" ShootSoundName="WepMediumCalibreShot" FlightSoundName="MediumShellFlightSound" ShotsInBurst="1" />
+            <DeviateShotAngle>0.2</DeviateShotAngle>
+            <DeviateShotAngleAiming>0.2</DeviateShotAngleAiming>
+            <MinimumTimeBetweenIdleRotationsMs>10000</MinimumTimeBetweenIdleRotationsMs>
+            <MaximumTimeBetweenIdleRotationsMs>15000</MaximumTimeBetweenIdleRotationsMs>
+            <AmmoMagazines>
+        <AmmoMagazine Subtype="155mmAPShell"/>
+        <AmmoMagazine Subtype="155mmDUAPShell"/>
+        <AmmoMagazine Subtype="155mmHEShell"/>
+            </AmmoMagazines>
+            <ReloadTime>2500</ReloadTime>
+            <Effects>
+                <Effect Action="Shoot" Dummy="muzzle_missile_001" Particle="Muzzle_Flash_MediumCalibre" Loop="false" InstantStop="false" DisplayOnlyOnDummyFiring="true"/>
+            </Effects>
+        </Weapon>
+
+        <Weapon>
+            <Id>
+                <TypeId>WeaponDefinition</TypeId>
+                <SubtypeId>305mmFixedCannon</SubtypeId>
+            </Id>
+            <MissileAmmoData RateOfFire="15" ShootSoundName="WepLargeCalibreShot" FlightSoundName="HeavyShellFlightSound" ShotsInBurst="1" />
+            <DeviateShotAngle>0.1</DeviateShotAngle>
+            <DeviateShotAngleAiming>0.1</DeviateShotAngleAiming>
+            <AmmoMagazines>
+        <AmmoMagazine Subtype="305mmAPShell"/>
+        <AmmoMagazine Subtype="305mmDUAPShell"/>
+        <AmmoMagazine Subtype="305mmHEShell"/>
+            </AmmoMagazines>
+            <ReloadTime>4000</ReloadTime>
+            <Effects>
+                <Effect Action="Shoot" Dummy="muzzle_missile_001" Particle="Muzzle_Flash_LargeCalibre" Loop="false" InstantStop="false" DisplayOnlyOnDummyFiring="true"/>
+            </Effects>
+        </Weapon>
+
+        <Weapon>
+            <Id>
+                <TypeId>WeaponDefinition</TypeId>
+                <SubtypeId>305mmDoubleCannon</SubtypeId>
+            </Id>
+            <MissileAmmoData RateOfFire="30" ShootSoundName="WepLargeCalibreShot" FlightSoundName="HeavyShellFlightSound" ShotsInBurst="2" />
+            <DeviateShotAngle>0.1</DeviateShotAngle>
+            <DeviateShotAngleAiming>0.1</DeviateShotAngleAiming>
+            <AmmoMagazines>
+        <AmmoMagazine Subtype="305mmAPShell"/>
+        <AmmoMagazine Subtype="305mmDUAPShell"/>
+        <AmmoMagazine Subtype="305mmHEShell"/>
+            </AmmoMagazines>
+            <ReloadTime>5000</ReloadTime>
+            <Effects>
+                <Effect Action="Shoot" Dummy="muzzle_missile_001" Particle="Muzzle_Flash_LargeCalibre" Loop="false" InstantStop="false" DisplayOnlyOnDummyFiring="true"/>
+                <Effect Action="Shoot" Dummy="muzzle_missile_002" Particle="Muzzle_Flash_LargeCalibre" Loop="false" InstantStop="false" DisplayOnlyOnDummyFiring="true"/>
+            </Effects>
+        </Weapon>
+
+        <Weapon>
+            <Id>
+                <TypeId>WeaponDefinition</TypeId>
+                <SubtypeId>FixedCoilgun</SubtypeId>
+            </Id>
+            <MissileAmmoData RateOfFire="50" ShootSoundName="CoilgunFire" FlightSoundName="HeavyShellFlightSound" ShotsInBurst="1" />
+            <DeviateShotAngle>0</DeviateShotAngle>
+            <DeviateShotAngleAiming>0</DeviateShotAngleAiming>
+            <NoAmmoSoundName>WepShipRailgunNoAmmo</NoAmmoSoundName>
+            <ShotDelay>250</ShotDelay>
+            <AmmoMagazines>
+        <AmmoMagazine Subtype="APCoilgunShell"/>
+        <AmmoMagazine Subtype="DUAPCoilgunShell"/>
+            </AmmoMagazines>
+            <ReloadTime>20000</ReloadTime>
+            <Effects>
+                <Effect Action="Shoot" Dummy="muzzle_missile_001" Particle="Muzzle_Flash_Coilgun" Loop="false" InstantStop="false" DisplayOnlyOnDummyFiring="true" OffsetZ="0.5"/>
+                <Effect Action="Shoot" Dummy="muzzle_missile_001" Particle="Muzzle_Flash_Coilgun" Loop="false" InstantStop="false" DisplayOnlyOnDummyFiring="true" OffsetZ="5"/>
+                <Effect Action="Shoot" Dummy="muzzle_missile_001" Particle="Muzzle_Flash_Autocannon" Loop="false" InstantStop="false" DisplayOnlyOnDummyFiring="true" OffsetZ="-0.5"/>
+            </Effects>
+        </Weapon>
+	
+  </Weapons>
+</Definitions>

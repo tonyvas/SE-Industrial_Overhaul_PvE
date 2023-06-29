@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CubeBlocks>
+
+    <Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
+      <Id>
+        <TypeId>LargeMissileTurret</TypeId>
+        <SubtypeId>HeavyLaserTurret</SubtypeId>
+      </Id>
+      <DisplayName>Heavy Laser Turret</DisplayName>
+      <Icon>Icons\HeavyLaserTurret.dds</Icon>
+      <CubeSize>Large</CubeSize>
+      <PlaceDecals>false</PlaceDecals>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="3" y="2" z="3" />
+      <Center x="1" y="0" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\HeavyLaserBase.mwm</Model>
+      <UseModelIntersection>true</UseModelIntersection>
+      <Components>
+        <Component Subtype="SteelPlate" Count="100" />
+        <Component Subtype="CopperWire" Count="30"/>
+        <Component Subtype="Construction" Count="40" />
+        <Component Subtype="MetalGrid" Count="25" />
+        <Component Subtype="Superconductor" Count="50" />
+        <Component Subtype="LargeTube" Count="25" />
+        <Component Subtype="Motor" Count="30" />
+        <Component Subtype="LaserEmitter" Count="100" />
+        <Component Subtype="Computer" Count="10" />
+        <Component Subtype="AdvancedComputer" Count="50" />
+        <Component Subtype="ArmoredPlate" Count="30" />
+      </Components>
+      <CriticalComponent Subtype="AdvancedComputer" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="3" EndY="3" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.33" File="Models\Construct\HeavyLaserTurretConstruct1.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="Models\Construct\HeavyLaserTurretConstruct2.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Construct\HeavyLaserTurretConstruct3.mwm" />
+      </BuildProgressModels>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>30</BuildTimeSeconds>
+      <OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture>
+      <WeaponDefinitionId Subtype="PDLaser" />
+      <InventoryMaxVolume>0.384</InventoryMaxVolume>
+      <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <ResourceSinkGroup>Defense</ResourceSinkGroup>
+      <MinElevationDegrees>-35</MinElevationDegrees>
+      <MaxElevationDegrees>35</MaxElevationDegrees>
+      <MinAzimuthDegrees>-180</MinAzimuthDegrees>
+      <MaxAzimuthDegrees>180</MaxAzimuthDegrees>
+      <IdleRotation>false</IdleRotation>
+      <MaxRangeMeters>2500</MaxRangeMeters>
+      <RotationSpeed>0.0005</RotationSpeed>
+      <ElevationSpeed>0.0003 </ElevationSpeed>
+      <EmissiveColorPreset>Default</EmissiveColorPreset>
+      <MinFov>0.1</MinFov>
+      <MaxFov>1.04719755</MaxFov>
+      <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+      <DestroySound>WepSmallWarheadExpl</DestroySound>
+      <IsAirTight>false</IsAirTight>
+    </Definition>
+
+    <Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
+      <Id>
+        <TypeId>LargeMissileTurret</TypeId>
+        <SubtypeId>LightLaserTurretLarge</SubtypeId>
+      </Id>
+      <DisplayName>Light Laser Turret</DisplayName>
+      <Icon>Icons\LightLaserTurret.dds</Icon>
+      <CubeSize>Large</CubeSize>
+      <PlaceDecals>false</PlaceDecals>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\LightLaserBase.mwm</Model>
+      <UseModelIntersection>true</UseModelIntersection>
+	  <BlockPairName>LightLaser</BlockPairName>
+      <Components>
+        <Component Subtype="SteelPlate" Count="40" />
+        <Component Subtype="CopperWire" Count="20"/>
+        <Component Subtype="Construction" Count="40" />
+        <Component Subtype="MetalGrid" Count="10" />
+        <Component Subtype="Superconductor" Count="20" />
+        <Component Subtype="LargeTube" Count="10" />
+        <Component Subtype="Motor" Count="10" />
+        <Component Subtype="LaserEmitter" Count="25" />
+        <Component Subtype="Computer" Count="10" />
+        <Component Subtype="AdvancedComputer" Count="20" />
+        <Component Subtype="ArmoredPlate" Count="10" />
+      </Components>
+      <CriticalComponent Subtype="AdvancedComputer" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="1" EndY="1" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.33" File="Models\Construct\LightLaserTurretConstruct1.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="Models\Construct\LightLaserTurretConstruct2.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Construct\LightLaserTurretConstruct3.mwm" />
+      </BuildProgressModels>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>30</BuildTimeSeconds>
+      <OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture>
+      <WeaponDefinitionId Subtype="PDLaser" />
+      <InventoryMaxVolume>0.384</InventoryMaxVolume>
+      <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <ResourceSinkGroup>Defense</ResourceSinkGroup>
+      <MinElevationDegrees>-35</MinElevationDegrees>
+      <MaxElevationDegrees>90</MaxElevationDegrees>
+      <MinAzimuthDegrees>-180</MinAzimuthDegrees>
+      <MaxAzimuthDegrees>180</MaxAzimuthDegrees>
+      <IdleRotation>false</IdleRotation>
+      <MaxRangeMeters>1500</MaxRangeMeters>
+      <RotationSpeed>0.0015</RotationSpeed>
+      <ElevationSpeed>0.0010 </ElevationSpeed>
+      <EmissiveColorPreset>Default</EmissiveColorPreset>
+      <MinFov>0.1</MinFov>
+      <MaxFov>1.04719755</MaxFov>
+      <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+      <DestroySound>WepSmallWarheadExpl</DestroySound>
+      <IsAirTight>false</IsAirTight>
+      <UpCameraOffset>0.5</UpCameraOffset>
+    </Definition>
+
+    <Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
+      <Id>
+        <TypeId>LargeMissileTurret</TypeId>
+        <SubtypeId>LightLaserTurretSmall</SubtypeId>
+      </Id>
+      <DisplayName>Light Laser Turret</DisplayName>
+      <Icon>Icons\LightLaserTurret.dds</Icon>
+      <CubeSize>Small</CubeSize>
+      <PlaceDecals>false</PlaceDecals>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="5" y="3" z="5" />
+      <Center x="2" y="0" z="2" />
+      <ModelOffset x="0" y="0.5" z="0" />
+      <Model>Models\LightLaserBase.mwm</Model>
+      <UseModelIntersection>true</UseModelIntersection>
+	  <BlockPairName>LightLaser</BlockPairName>
+      <Components>
+        <Component Subtype="SteelPlate" Count="40" />
+        <Component Subtype="CopperWire" Count="20"/>
+        <Component Subtype="Construction" Count="40" />
+        <Component Subtype="MetalGrid" Count="10" />
+        <Component Subtype="Superconductor" Count="20" />
+        <Component Subtype="LargeTube" Count="10" />
+        <Component Subtype="Motor" Count="10" />
+        <Component Subtype="LaserEmitter" Count="25" />
+        <Component Subtype="Computer" Count="10" />
+        <Component Subtype="AdvancedComputer" Count="20" />
+        <Component Subtype="ArmoredPlate" Count="10" />
+      </Components>
+      <CriticalComponent Subtype="AdvancedComputer" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="5" EndY="5" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.33" File="Models\Construct\LightLaserTurretConstruct1.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="Models\Construct\LightLaserTurretConstruct2.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Construct\LightLaserTurretConstruct3.mwm" />
+      </BuildProgressModels>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>30</BuildTimeSeconds>
+      <OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture>
+      <WeaponDefinitionId Subtype="PDLaser" />
+      <InventoryMaxVolume>0.384</InventoryMaxVolume>
+      <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <ResourceSinkGroup>Defense</ResourceSinkGroup>
+      <MinElevationDegrees>-35</MinElevationDegrees>
+      <MaxElevationDegrees>90</MaxElevationDegrees>
+      <MinAzimuthDegrees>-180</MinAzimuthDegrees>
+      <MaxAzimuthDegrees>180</MaxAzimuthDegrees>
+      <IdleRotation>false</IdleRotation>
+      <MaxRangeMeters>1500</MaxRangeMeters>
+      <RotationSpeed>0.0015</RotationSpeed>
+      <ElevationSpeed>0.0010 </ElevationSpeed>
+      <EmissiveColorPreset>Default</EmissiveColorPreset>
+      <MinFov>0.1</MinFov>
+      <MaxFov>1.04719755</MaxFov>
+      <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+      <DestroySound>WepSmallWarheadExpl</DestroySound>
+      <IsAirTight>false</IsAirTight>
+      <UpCameraOffset>0.5</UpCameraOffset>
+    </Definition>
+
+    <Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
+      <Id>
+        <TypeId>LargeMissileTurret</TypeId>
+        <SubtypeId>PDLaserSmall</SubtypeId>
+      </Id>
+      <DisplayName>Point Defense Laser</DisplayName>
+      <Icon>Icons\PDLaser.dds</Icon>
+      <CubeSize>Small</CubeSize>
+      <PlaceDecals>true</PlaceDecals>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="3" y="3" z="3" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\PDLaserSmall.mwm</Model>
+      <UseModelIntersection>true</UseModelIntersection>
+	  <BlockPairName>PDLaser</BlockPairName>
+      <Components>
+        <Component Subtype="InteriorPlate" Count="15" />
+        <Component Subtype="Construction" Count="20" />
+        <Component Subtype="MetalGrid" Count="5" />
+        <Component Subtype="LargeTube" Count="10" />
+        <Component Subtype="CopperWire" Count="20" />
+        <Component Subtype="Motor" Count="5" />
+        <Component Subtype="Computer" Count="10" />
+        <Component Subtype="AdvancedComputer" Count="30" />
+        <Component Subtype="Superconductor" Count="10" />
+        <Component Subtype="LaserEmitter" Count="10" />
+        <Component Subtype="BulletproofGlass" Count="30" />
+      </Components>
+      <CriticalComponent Subtype="LaserEmitter" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="3" EndY="3" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.33" File="Models\Construct\PDLaserSmallConstruct1.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="Models\Construct\PDLaserSmallConstruct2.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Construct\PDLaserSmallConstruct3.mwm" />
+      </BuildProgressModels>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>20</BuildTimeSeconds>
+      <OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture>
+      <WeaponDefinitionId Subtype="PDLaser" />
+      <InventoryMaxVolume>0.384</InventoryMaxVolume>
+      <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <ResourceSinkGroup>Defense</ResourceSinkGroup>
+      <MinElevationDegrees>-20</MinElevationDegrees>
+      <MaxElevationDegrees>90</MaxElevationDegrees>
+      <MinAzimuthDegrees>-180</MinAzimuthDegrees>
+      <MaxAzimuthDegrees>180</MaxAzimuthDegrees>
+      <IdleRotation>false</IdleRotation>
+      <MaxRangeMeters>500</MaxRangeMeters>
+      <RotationSpeed>0.005</RotationSpeed>
+      <ElevationSpeed>0.005 </ElevationSpeed>
+      <EmissiveColorPreset>Default</EmissiveColorPreset>
+      <MinFov>0.1</MinFov>
+      <MaxFov>1</MaxFov>
+      <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+      <DestroySound>WepSmallWarheadExpl</DestroySound>
+      <IsAirTight>false</IsAirTight>
+      <UpCameraOffset>0.25</UpCameraOffset>
+    </Definition>
+
+    <Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
+      <Id>
+        <TypeId>LargeMissileTurret</TypeId>
+        <SubtypeId>PDLaser</SubtypeId>
+      </Id>
+      <DisplayName>Point Defense Laser</DisplayName>
+      <Icon>Icons\PDLaser.dds</Icon>
+      <CubeSize>Large</CubeSize>
+      <PlaceDecals>true</PlaceDecals>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\PDLaserLarge.mwm</Model>
+      <UseModelIntersection>true</UseModelIntersection>
+	  <BlockPairName>PDLaser</BlockPairName>
+      <Components>
+        <Component Subtype="InteriorPlate" Count="15" />
+        <Component Subtype="Construction" Count="20" />
+        <Component Subtype="MetalGrid" Count="5" />
+        <Component Subtype="LargeTube" Count="10" />
+        <Component Subtype="CopperWire" Count="20" />
+        <Component Subtype="Motor" Count="5" />
+        <Component Subtype="Computer" Count="10" />
+        <Component Subtype="AdvancedComputer" Count="30" />
+        <Component Subtype="Superconductor" Count="10" />
+        <Component Subtype="LaserEmitter" Count="10" />
+        <Component Subtype="BulletproofGlass" Count="30" />
+      </Components>
+      <CriticalComponent Subtype="LaserEmitter" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="1" EndY="1" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.33" File="Models\Construct\PDLaserLargeConstruct1.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="Models\Construct\PDLaserLargeConstruct2.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Construct\PDLaserLargeConstruct3.mwm" />
+      </BuildProgressModels>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>20</BuildTimeSeconds>
+      <OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture>
+      <WeaponDefinitionId Subtype="PDLaser" />
+      <InventoryMaxVolume>0.384</InventoryMaxVolume>
+      <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <ResourceSinkGroup>Defense</ResourceSinkGroup>
+      <MinElevationDegrees>-20</MinElevationDegrees>
+      <MaxElevationDegrees>90</MaxElevationDegrees>
+      <MinAzimuthDegrees>-180</MinAzimuthDegrees>
+      <MaxAzimuthDegrees>180</MaxAzimuthDegrees>
+      <IdleRotation>false</IdleRotation>
+      <MaxRangeMeters>500</MaxRangeMeters>
+      <RotationSpeed>0.005</RotationSpeed>
+      <ElevationSpeed>0.005 </ElevationSpeed>
+      <EmissiveColorPreset>Default</EmissiveColorPreset>
+      <MinFov>0.1</MinFov>
+      <MaxFov>1</MaxFov>
+      <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+      <DestroySound>WepSmallWarheadExpl</DestroySound>
+      <IsAirTight>false</IsAirTight>
+      <UpCameraOffset>0.25</UpCameraOffset>
+    </Definition>
+
+  </CubeBlocks>
+</Definitions>
